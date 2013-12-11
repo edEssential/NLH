@@ -1,0 +1,36 @@
+.videoHolder {
+	float:left;
+	margin-top:140px;
+}
+.videoHolder1 {
+	float:left;
+	margin:140px 0px 0px 350px;
+}
+.videoHolder2 {
+	float:left;
+	margin:140px 0px 0px 230px;
+}
+.videoHolder3 {
+	float:left;
+	margin:140px 0px 0px 120px;
+}
+.video {
+	display:inline;
+	float:left;
+	margin:0px 8.1px 40px 8.1px;
+}
+.clientTitle {
+	margin:4px 0px;
+	font-family:"Brandon Grotesque";
+	font-weight:100;
+	font-size:14px;
+}
+.pipe {
+	margin:0px 6px;
+}
+.categoryHeader {
+	position:absolute;
+	font-size:22px;
+	font-weight:400;
+	margin:466px 0px 0px 0px;
+}

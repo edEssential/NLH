@@ -1,0 +1,93 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*, body {
+	margin: 0;
+}
+body {
+	
+}
+.header {
+	width:945px;
+	float:left;
+	clear:both;
+}	
+li {
+	display:inline;
+}
+body.releases_controller #navigation a.releasesnav,
+body.photos_controller  #navigation a.photosnav,
+body.designs_controller #navigation a.designsnav,
+body.shows_controller #navigation a.showsnav
+{
+  color:#bdbdbd;
+}
+.logo {width:177px;margin:65px auto;}
+.navigationContainer {
+	margin:-165px 0px 0px 0px;
+}
+.navigationButtons a {
+	font-family:"Helvetica Neue";
+	color:black;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:16px;
+	letter-spacing:4px;
+}
+#about {
+	margin-left:-36px;
+}
+#work {
+	margin-left:62px;
+}
+#contact {
+	margin-left:491px;
+}
+#links {
+	margin-left:67px;
+}
+#rulers{position:absolute;margin-top:432px;}
+.left {float:left;margin:2px 32px 0px 1px;}
+.right {float:right;margin:2px 0px 0px 0px;}
+.navrulers {position:absolute;margin:-275px 0px 0px 2px;}
+.strapline {
+	font-family:"Brandon Grotesque";
+	font-size:60px;
+	width:380px;
+	margin:129px auto 0px auto;
+}
+.footer {
+	float:left;
+	clear:both;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+.container {
+	width:100%;
+	max-width:768px;
+}
+}
+
+@media only screen and (min-width: 611px) and (max-width: 767px) {
+
+.container {
+	width:100%;
+	max-width:600px;
+}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 610px) {
+
+.container {
+	width:100%;
+	max-width:480px;
+}
+}
+
+@media only screen and (max-width: 479px) {
+
+.container {
+	max-width:320px;
+}
+}

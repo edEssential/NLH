@@ -1,0 +1,29 @@
+<div class="formText formFade">
+	<p class="formHeader Gray">Add case studies to the work page of your site!</p><br /><br />
+	<div class="form">	
+		<%= form_for(@work) do |f| %>
+			<%= f.label :Which_category?, class: 'formFieldT2' %>
+    		<%= f.select(:category_id, options_for_select([['Adverts', '1'], ['Shorts', '2'], ['Web', '3']], @work.category_id)) %><br /><br />
+			<%= f.label :Video_url?, class: 'formFieldT2' %>
+    		<%= f.text_field :home_url, class: 'formFieldT2'  %><br /><br />
+			<%= f.label :title, class: 'formFieldT2' %>
+    		<%= f.text_field :title, class: 'formFieldT2'  %><br /><br />
+			<%= f.label :about, class: 'formFieldT2' %><br /><br />
+    		<%= f.text_area :about, :value => 'Music & SFX: Nathan Liddle Hulme', class: 'formFieldT2' %><br /><br />
+			<%= f.label :Post_to_homepage, class: 'formFieldT2' %><br />
+			<div><%= f.collection_select :posthome, [[false, 'No'] ,[true, 'Yes']], :first, :last %></div><br />
+			<div id="homepageinfo" style="display:none;">
+				<%= f.label :Home_page_info, class: 'formFieldT2' %><br /><br />
+    			<%= f.text_area :homepageinfo, :value => 'Lorem ipsum dolor sit amet, 
+				consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+				Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+				Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis 
+				at vero eros et accumsan', class: 'formFieldT2' %><br /><br />
+			</div>
+			<%= f.label :client, class: 'formFieldT2' %>
+    		<%= f.text_field :client, class: 'formFieldT2'  %><br /><br />
+    		<%= f.submit %>
+		<% end %>
+		
+	</div>
+</div>

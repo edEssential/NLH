@@ -1,0 +1,9 @@
+<h1 class="categoryHeader"><%= @category.upcase rescue nil %></h1>
+<div class='<%= counter %>'>
+	<% @work.each do |w| %>
+		<div class="video">
+			<div><%= w.small_url_html %></div>
+			<div class="clientTitle"><em><%= w.client %></em><span class="pipe">|</span><em><%= w.title %></em></div>
+		</div>
+	<% end %>
+</div>
