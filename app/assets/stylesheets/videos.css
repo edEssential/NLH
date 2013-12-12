@@ -19,11 +19,16 @@
 	float:left;
 	margin:0px 8.1px 40px 8.1px;
 }
-.clientTitle {
+.clientTitle, .clientTitle2 {
 	margin:4px 0px;
 	font-family:"Brandon Grotesque";
 	font-weight:100;
 	font-size:14px;
+}
+.clientTitle2 {
+	float:left;
+	font-weight:400;
+	font-size:24px;
 }
 .pipe {
 	margin:0px 6px;
@@ -33,4 +38,15 @@
 	font-size:22px;
 	font-weight:400;
 	margin:466px 0px 0px 0px;
+}
+.VideoInfo {
+	float:right;
+	font-family:"helvetica";
+	font-size:13px;
+	line-height:18px;
+	color:#828282;
+}
+.inline {
+	display:inline;
+	width:945px;
 }

@@ -2,7 +2,7 @@
 <div class='<%= counter %>'>
 	<% @work.each do |w| %>
 		<div class="video">
-			<div><%= w.small_url_html %></div>
+			<div><%= link_to image_tag(w.image.url(:medium)), w %></div>
 			<div class="clientTitle"><em><%= w.client %></em><span class="pipe">|</span><em><%= w.title %></em></div>
 		</div>
 	<% end %>

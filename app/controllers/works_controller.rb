@@ -41,7 +41,13 @@ class WorksController < ApplicationController
     else
       @work = Work.all
     end
+  end
   
+  def show
+    @work = Work.find(params[:id])
+    #if request.path != release_path(@release)
+     # redirect_to @release, status: :moved_permanently
+    #end
   end
   
 end

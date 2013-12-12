@@ -6,6 +6,8 @@
     		<%= f.select(:category_id, options_for_select([['Adverts', '1'], ['Shorts', '2'], ['Web', '3']], @work.category_id)) %><br /><br />
 			<%= f.label :Video_url?, class: 'formFieldT2' %>
     		<%= f.text_field :home_url, class: 'formFieldT2'  %><br /><br />
+			<%= f.label :Image_plaecholder, class: 'formFieldT2'  %><br />
+			<%= f.file_field :image, class: 'formFieldT2 file'  %><br /><br />
 			<%= f.label :title, class: 'formFieldT2' %>
     		<%= f.text_field :title, class: 'formFieldT2'  %><br /><br />
 			<%= f.label :about, class: 'formFieldT2' %><br /><br />

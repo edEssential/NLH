@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131210143201) do
+ActiveRecord::Schema.define(:version => 20131211150806) do
 
   create_table "abouts", :force => true do |t|
     t.datetime "created_at", :null => false
@@ -40,14 +40,18 @@ ActiveRecord::Schema.define(:version => 20131210143201) do
     t.string   "title"
     t.string   "about"
     t.string   "client"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
     t.integer  "category_id"
     t.string   "home_url"
     t.string   "homepageinfo"
     t.boolean  "posthome"
     t.string   "large_url"
     t.string   "small_url"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
   end
 
 end
