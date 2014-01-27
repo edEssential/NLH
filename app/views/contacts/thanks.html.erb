@@ -1,0 +1,12 @@
+<div class="releaseBody gray introText">
+	<div class="releaseDescription mediumGray introText">
+		<% c = Contact.first %>
+			<em>
+				<h1><%= c.thanks %></h1>
+				<span><%= simple_format(c.contacttext) %></span>
+				<% if user_signed_in? %>
+					<%= link_to image_tag('edit2.png'), edit_contact_path(c), :class => "editRelease" %>
+				<% end %>
+			</em>
+	</div>
+</div>

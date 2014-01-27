@@ -1,23 +1,10 @@
 .videoHolder {
 	float:left;
-	margin-top:140px;
+	margin-top:110px;
 }
-.videoHolder1 {
-	float:left;
-	margin:140px 0px 0px 350px;
-}
-.videoHolder2 {
-	float:left;
-	margin:140px 0px 0px 230px;
-}
-.videoHolder3 {
-	float:left;
-	margin:140px 0px 0px 120px;
-}
-.video {
+.inline {
 	display:inline;
-	float:left;
-	margin:0px 8.1px 40px 8.1px;
+	width:945px;
 }
 .clientTitle, .clientTitle2 {
 	margin:4px 0px;
@@ -29,24 +16,40 @@
 	float:left;
 	font-weight:400;
 	font-size:24px;
+	margin:4px 0px 25px 0px;
 }
 .pipe {
 	margin:0px 6px;
 }
-.categoryHeader {
-	position:absolute;
-	font-size:22px;
-	font-weight:400;
-	margin:466px 0px 0px 0px;
-}
 .VideoInfo {
-	float:right;
+	float:left;
 	font-family:"helvetica";
 	font-size:13px;
 	line-height:18px;
 	color:#828282;
+	margin:25px 0px;
 }
-.inline {
+.indexHolder {
+	float:left;
+	margin:130px 0px 50px 0px;
 	display:inline;
-	width:945px;
+}
+.categoryHeaders {
+	font-family:"Brandon Grotesque";
+	font-size:16px;
+	font-weight:800;
+	margin:20px 0px 40px 0px;
+}
+.individualVideo {
+	float:left;
+	margin:0px 8px 20px 8px;
+}
+.howWide1 {
+	
+}
+.howWide2 {
+	
+}
+.howWide3 {
+	margin-left:120px;
 }

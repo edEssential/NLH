@@ -1,0 +1,19 @@
+<div class="formText formFade">
+	<p class="formHeader Gray">Sign up</p><br /><br />
+	<div class="form">	
+		<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+		  <%= devise_error_messages! %>
+
+		  <%= f.label :email, class: 'formFieldT2'  %><br />
+		  <%= f.email_field :email, :autofocus => true, class: 'formFieldT2'  %><br /><br />
+
+		  <%= f.label :password, class: 'formFieldT2'  %><br />
+		  <%= f.password_field :password, class: 'formFieldT2'  %><br /><br />
+
+		  <%= f.label :password_confirmation, class: 'formFieldT2'  %><br />
+		  <%= f.password_field :password_confirmation, class: 'formFieldT2'  %><br /><br />
+
+		  <%= f.submit "Sign up", class: 'formFieldT2'  %>
+		<% end %>
+	</div>
+</div>

@@ -35,16 +35,27 @@ body.shows_controller #navigation a.showsnav
 	letter-spacing:4px;
 }
 #about {
-	margin-left:-36px;
+	margin-left:-40px;
 }
 #work {
-	margin-left:62px;
+	margin-left:-36px;
 }
 #contact {
-	margin-left:491px;
+	margin-left:72px;
 }
 #links {
-	margin-left:67px;
+	margin-left:435px;
+}
+.socialNav {
+	position:absolute;
+	margin:-25px 0px 0px 850px;
+}
+.socialNavButtons {
+	width:20px;
+	margin-right:-5px;
+}
+.socialNavButtons img {
+	width:35px;
 }
 #rulers{position:absolute;margin-top:432px;}
 .left {float:left;margin:2px 32px 0px 1px;}

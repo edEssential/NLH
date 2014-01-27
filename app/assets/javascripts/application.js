@@ -3,6 +3,11 @@
 //= require jquery.ui.all
 //= require jquery_ujs
 //= require_tree .
+//= require bootstrap
+//= require bootstrap.min
+
+$('#work_header_tip').tooltip();
+$(document).on('mouseover', '#work_header_tip', function () { $(this).tooltip('show'); });
 
 $(document).ready(function () {
 	$('.container').hide();

@@ -1,14 +1,14 @@
 module WorkHelper
   
   def counter
-    if @work.count == 1
-  		"videoHolder1"
-  	elsif @work.count == 2
-  		"videoHolder2"
-  	elsif @work.count == 3
-  	  "videoHolder3"
+    if @work_categories.count == 1
+  		"howWide1"
+  	elsif @work_categories.count == 2
+  		"howWide2"
+  	elsif @work_categories.count == 3
+  	  "howWide3"
   	else
-  	  "videoHolder"
+  	  "howWide"
   	end
   end
   

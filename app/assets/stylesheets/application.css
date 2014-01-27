@@ -13,7 +13,10 @@
  *= require homepage
  *= require cms
  *= require videos
+ *= require contactsStyle
  *= require shared
  *= require jquery.dropdown
+ *= require bootstrap
+ *= require bootstrap.min
  *= require_tree .
  */

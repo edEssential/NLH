@@ -1,0 +1,13 @@
+<div class="contact">
+	<div class="releaseBody gray introText">
+		<div class="releaseDescription mediumGray introText2">
+				<em>
+					<h1>Hi <%= @contact_last.name.split(" ").first.titleize %>, <%= @contact_first.thankstitle %></h1>
+					<span><%= simple_format(@contact_first.thankstext) %></span>
+					<% if user_signed_in? %>
+						<%= link_to image_tag('edit2.png'), edit_contact_path(@contact_first), :class => "editRelease" %>
+					<% end %>
+				</em>
+		</div>
+	</div>
+</div>

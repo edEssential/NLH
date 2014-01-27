@@ -1,0 +1,31 @@
+.contact {width:636px;height:100%;margin:63px 0px 0px 0px;float:left;clear:both;}
+.contactDescription {width:280px;font-size:15px;font-family:'futura';margin:-7px 0px 0px 16px;float:left;}
+.formContact {width:280px;text-align:left;float:right;margin:0px -25px 0px 0px;}
+.contactForm {display:inline;font-size:12px;font-family:'futura';font-weight:400;margin:-30px 0px 0px 0px;}
+.formFieldTC {margin:0;}
+.formFieldTC2 {height:120px;}
+h1 {font-size:18px;line-height:18px;margin:16px 0px 36px 0px}
+
+@media only screen and (min-width: 611px) and (max-width: 767px) {
+
+.contact {width:510px}	
+.contactDescription {width:200px;font-size:15px;font-family:'futura';margin:-7px 50px 0px 16px;float:left;}
+.formContact {width:280px;text-align:left;float:right;margin:0px -55px 0px 0px;}
+
+}
+	
+@media only screen and (min-width: 480px) and (max-width: 610px) {
+
+.contact {width:440px}	
+.contactDescription {width:180px;font-size:15px;font-family:'futura';margin:-7px 0px 0px 16px;float:left;}
+.formContact {width:200px;text-align:left;float:right;margin:0px 15px 0px 0px;}
+	
+}
+
+@media only screen and (max-width: 479px) {
+	
+.contact {width:300px}	
+.contactDescription {width:300px;font-size:15px;font-family:'futura';margin:-7px 0px 0px 0px;float:left;text-align:center;}
+.formContact {width:200px;text-align:left;float:left;margin:0px 15px 0px 35px;}	
+
+}

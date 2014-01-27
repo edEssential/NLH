@@ -35,13 +35,21 @@ class WorksController < ApplicationController
   end
   
   def index
-    if params[:category]
-      @work = Work.where(:category_id => params[:category])
-      @category = @work.last.category.name
-    else
-      @work = Work.all
-    end
+    @work = Work.includes(:category).order("category_id")
+    @work_categories = @work.group_by { |w| w.category.name }
+    @work_categories = @work_categories.sort
   end
+  
+  # index when the work header action is dropdown list
+  
+  #def index
+    #if params[:category]
+      #@work = Work.where(:category_id => params[:category])
+      #@category = @work.last.category.name
+    #else
+      #@work = Work.all
+    #end
+  #end
   
   def show
     @work = Work.find(params[:id])

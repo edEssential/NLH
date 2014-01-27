@@ -34,4 +34,17 @@ V1::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+  
+  config.action_mailer.smtp_settings = {
+    :address => "smtp.mandrillapp.com",
+    :port => 587,
+    :enable_starttls_auto => true,
+    :user_name => 'ed_hamilton@live.com',
+    :password => 'zCN1WSPoFLoJWHoypL7lOQ',
+    :authentication => 'login',
+    :domain => 'domain.com',
+    
+    }
+    
+    ActionMailer::Base.delivery_method = :smtp
 end

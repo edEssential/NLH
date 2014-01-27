@@ -1,6 +1,9 @@
 <div class="container">
 	<div class="info">
 		<%= simple_format(@homepost.info) %>
+		<% if user_signed_in? %>
+			<%= link_to image_tag('edit2.png'), edit_homepost_path(1), :class => "editHome" %>
+		<% end %>
 	</div>
 	<div class="soundcloud" id="tabs">
 		<ul class="titles">
@@ -29,7 +32,7 @@
 				<div class="homeVideo">
 					<div class="homeVideoTitle"><%= w.title %></div>
 					<div class="homeVideoVideo"><%= w.home_url_html %></div>
-					<div class="homeVideoInfo"><%= simple_format(truncate (w.homepageinfo), length: 100, :separator => ' ') rescue nil %><%= link_to 'SEE MORE', works_path, :class => 'more links' %></div>
+					<div class="homeVideoInfo"><%= simple_format(truncate (w.homepageinfo), length: 100, :separator => ' ') rescue nil %><%= link_to 'SEE MORE', work_path(w), :class => 'more links' %></div>
 				</div>
 			</div>
 		<% end %>
