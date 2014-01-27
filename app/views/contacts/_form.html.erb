@@ -1,0 +1,18 @@
+<div class="formText formFade">
+	<p class="formHeader">Edit the title and content of your contact page!</p><br /><br />
+	<div class="form">	
+		<%= form_for(@contact) do |f| %>
+			<h1>Contact page text</h1>
+    		<%= f.label :Title, class: 'formField' %>
+    		<%= f.text_field :title, class: 'formFieldT'  %><br />
+			<%= f.label :Content, class: 'formField' %>
+    		<%= f.text_area :text, class: 'formFieldT'  %><br />
+			<h1>Thanks page text</h1>
+			<%= f.label :Title, class: 'formField' %>
+    		<%= f.text_field :thankstitle, class: 'formFieldT'  %><br />
+			<%= f.label :Content, class: 'formField' %>
+    		<%= f.text_area :thankstext, class: 'formFieldT'  %><br />
+    		<%= f.submit %>
+		<% end %>
+	</div>
+</div>
