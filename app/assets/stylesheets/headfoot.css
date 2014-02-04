@@ -19,10 +19,6 @@
 .strapline {font-family:"Brandon Grotesque";font-size:60px;width:380px;margin:129px auto 0px auto;}
 ul {text-decoration:none;}
 li {display:inline;}
-.linkGray, .linkGray a {color:#595959;font-family:"helvetica";text-decoration:none;}
-.links {color:#62cecc;font-family:"helvetica";text-decoration:none;}
-.desc {display:none;}
-h1 {font-family:"Brandon Grotesque";}
 
 body.home_controller  #navigation a.homenav,
 body.releases_controller  #navigation a.homenav,
@@ -33,48 +29,48 @@ body.thanks_controller #navigation a.contactsnav {color:#bdbdbd;}
 
 @media only screen and (min-width: 768px) and (max-width: 955px) {
 
-.container {width:460px;}
-.header {width:460px;}
-.logo {width:100px;margin:20px 20px 0px 10px;}
+.container {width:748px;}
+.header {width:748px;}
+.logo {width:130px;margin:20px 20px 0px 10px;}
 .logo img {max-width:100%;}
 #rulers {position:relative;margin-top:0;}
 .navrulers, .strapline {display:none;}
 .rulers, .left, .right {width:300px;margin:0 auto;float:none;}
 .left img, .right img {max-width:100%;}
 .left {display:none;}
-.right {width:318px;margin:-7px 0px 0px 45px;}
-.navigationContainer {width:460px;margin:0 auto;}
-.navigationButtons {width:320px;margin:-43px 0px 0px 85px;}
-.navigationButtons a {display:inline;text-align:left;font-family:"futura";font-size:14px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;color:black;margin:0px 5px 6px 0px;}
+.right {width:549px;margin:2px 0px 0px -35px;}
+.navigationContainer {width:460px;margin:-60px auto 0 auto;}
+.navigationButtons {width:420px;margin:-48px 0px 0px 5px;}
+.navigationButtons a {display:inline;text-align:left;font-family:"futura";font-size:18px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;color:black;margin:0px 40px 6px 0px;}
 #about {margin-left:0px;}
 #work {margin-left:0px;}
 #contact {margin-left:0px;}
 #links {margin-left:0px;}
-.socialNav {display:block;width:100px;margin:-26px 0px 0px 365px;}
+.socialNav {display:block;width:100px;margin:-26px 0px 0px 510px;}
 .socialNav img {width:32px;margin-left:-5px;}
 .footer {display:none;}
 }
 
 @media only screen and (min-width: 611px) and (max-width: 767px) {
 
-.container {width:460px;}
-.header {width:460px;}
-.logo {width:100px;margin:20px 20px 0px 10px;}
+.container {width:591px;}
+.header {width:591px;}
+.logo {width:130px;margin:20px 20px 0px 10px;}
 .logo img {max-width:100%;}
 #rulers {position:relative;margin-top:0;}
 .navrulers, .strapline {display:none;}
 .rulers, .left, .right {width:300px;margin:0 auto;float:none;}
 .left img, .right img {max-width:100%;}
 .left {display:none;}
-.right {width:318px;margin:-7px 0px 0px 45px;}
+.right {width:383px;margin:-7px 0px 0px 35px;}
 .navigationContainer {width:460px;margin:0 auto;}
-.navigationButtons {width:320px;margin:-43px 0px 0px 85px;}
-.navigationButtons a {display:inline;text-align:left;font-family:"futura";font-size:14px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;color:black;margin:0px 5px 6px 0px;}
+.navigationButtons {width:420px;margin:-83px 0px 0px 75px;}
+.navigationButtons a {display:inline;text-align:left;font-family:"futura";font-size:16px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;color:black;margin:0px 8px 6px 0px;}
 #about {margin-left:0px;}
 #work {margin-left:0px;}
 #contact {margin-left:0px;}
 #links {margin-left:0px;}
-.socialNav {display:block;width:100px;margin:-26px 0px 0px 365px;}
+.socialNav {display:block;width:100px;margin:-26px 0px 0px 415px;}
 .socialNav img {width:32px;margin-left:-5px;}
 .footer {display:none;}
 }
@@ -123,9 +119,6 @@ body.thanks_controller #navigation a.contactsnav {color:#bdbdbd;}
 #links {margin-left:0px;}
 .socialNav {display:block;width:200px;margin:10px 0px 0px 100px;}
 .socialNav img {width:35px;}
-.footer {display:none;}
+.footer {width:300px;}
+.footer img {max-width:100%;}
 }
-
-
-
-

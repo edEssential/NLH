@@ -4,16 +4,14 @@
 
 <div class="contact contacts">
 		
-	<div class="contactText gray introText">
-		<div class="contactDescription mediumGray">
+	<div class="contactText">
+		<div class="contactDescription">
 			<% c = Contact.first %>
 			<h1><%= c.title %></h1>
-			<em>
-				<span><%= simple_format(c.text) %></span>
-				<% if user_signed_in? %>
-					<%= link_to image_tag('edit2.png'), edit_contact_path(c), :class => "editRelease" %>
-				<% end %>
-			</em>
+			<span class="Gray"><%= simple_format(c.text) %></span>
+			<% if user_signed_in? %>
+				<%= link_to image_tag('edit2.png'), edit_contact_path(c), :class => "editRelease" %>
+			<% end %>
 		</div>
 	</div>
 	
@@ -25,7 +23,7 @@
     		<%= f.text_field :name, class: 'formFieldTC'  %><br /><br />
 			<%= f.label :message, class: 'contactForm gray' %><br />
     		<%= f.text_area :messagetext, class: 'formFieldTC2'  %><br /><br />
-    		<%= f.submit "Send message", class: 'contactSubmit' %>
+    		<%= f.submit "Send message", class: 'contactSubmit formFieldTC' %>
 		<% end %>
 	</div>
 	
