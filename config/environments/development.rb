@@ -33,7 +33,7 @@ V1::Application.configure do
   config.assets.compress = false
 
   # Expands the lines which load the assets
-  config.assets.debug = true
+  config.assets.debug = false
   
   config.action_mailer.smtp_settings = {
     :address => "smtp.mandrillapp.com",
@@ -47,4 +47,5 @@ V1::Application.configure do
     }
     
     ActionMailer::Base.delivery_method = :smtp
+    
 end

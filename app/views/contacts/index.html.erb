@@ -7,24 +7,24 @@
 	<div class="contactText gray introText">
 		<div class="contactDescription mediumGray">
 			<% c = Contact.first %>
-				<em>
-					<h1><%= c.title %></h1>
-					<span><%= simple_format(c.text) %></span>
-					<% if user_signed_in? %>
-						<%= link_to image_tag('edit2.png'), edit_contact_path(c), :class => "editRelease" %>
-					<% end %>
-				</em>
+			<h1><%= c.title %></h1>
+			<em>
+				<span><%= simple_format(c.text) %></span>
+				<% if user_signed_in? %>
+					<%= link_to image_tag('edit2.png'), edit_contact_path(c), :class => "editRelease" %>
+				<% end %>
+			</em>
 		</div>
 	</div>
 	
 	<div class="formContact">	
 		<%= form_for(@contact) do |f| %>
-			<%= f.label :email, class: 'contactForm gray' %>
-    		<%= f.text_field :email, class: 'formFieldTC'  %><br />
-			<%= f.label :name, class: 'contactForm gray' %>
-    		<%= f.text_field :name, class: 'formFieldTC'  %><br />
-			<%= f.label :message, class: 'contactForm gray' %>
-    		<%= f.text_area :messagetext, class: 'formFieldTC2'  %><br />
+			<%= f.label :email, class: 'contactForm gray' %><br />
+    		<%= f.text_field :email, class: 'formFieldTC'  %><br /><br />
+			<%= f.label :name, class: 'contactForm gray' %><br />
+    		<%= f.text_field :name, class: 'formFieldTC'  %><br /><br />
+			<%= f.label :message, class: 'contactForm gray' %><br />
+    		<%= f.text_area :messagetext, class: 'formFieldTC2'  %><br /><br />
     		<%= f.submit "Send message", class: 'contactSubmit' %>
 		<% end %>
 	</div>

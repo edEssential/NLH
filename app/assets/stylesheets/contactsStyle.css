@@ -1,31 +1,29 @@
-.contact {width:636px;height:100%;margin:63px 0px 0px 0px;float:left;clear:both;}
-.contactDescription {width:280px;font-size:15px;font-family:'futura';margin:-7px 0px 0px 16px;float:left;}
-.formContact {width:280px;text-align:left;float:right;margin:0px -25px 0px 0px;}
-.contactForm {display:inline;font-size:12px;font-family:'futura';font-weight:400;margin:-30px 0px 0px 0px;}
-.formFieldTC {margin:0;}
-.formFieldTC2 {height:120px;}
-h1 {font-size:18px;line-height:18px;margin:16px 0px 36px 0px}
+.contact {width:636px;height:100%;margin:123px 0px 250px 0px;float:left;clear:both;}
+.contactDescription {width:480px;font-size:14px;line-height:20px;font-family:'futura';margin:30px 0px 0px 420px;float:left;}
+.formContact {position:absolute;width:280px;text-align:left;margin:8px 0px 0px 10px;}
+.contactForm {display:inline;font-size:14px;font-family:'futura';font-weight:400;margin:-30px 0px 0px 0px;}
+.formFieldTC {margin:5px 0px 0px 0px;height:20px;border:1px solid gray;border-radius:3px;}
+.formFieldTC2 {margin:5px 0px 0px 0px;height:110px;border:1px solid gray;border-radius:3px;}
+h1 {font-size:20px;line-height:18px;margin:16px 0px 36px 0px;}
 
 @media only screen and (min-width: 611px) and (max-width: 767px) {
 
-.contact {width:510px}	
+.contact {width:510px;}	
 .contactDescription {width:200px;font-size:15px;font-family:'futura';margin:-7px 50px 0px 16px;float:left;}
 .formContact {width:280px;text-align:left;float:right;margin:0px -55px 0px 0px;}
-
 }
 	
 @media only screen and (min-width: 480px) and (max-width: 610px) {
 
-.contact {width:440px}	
-.contactDescription {width:180px;font-size:15px;font-family:'futura';margin:-7px 0px 0px 16px;float:left;}
-.formContact {width:200px;text-align:left;float:right;margin:0px 15px 0px 0px;}
-	
+.contact {display:none;}	
+.contactDescription {display:none;}
+.formContact {display:none;}
 }
 
 @media only screen and (max-width: 479px) {
 	
-.contact {width:300px}	
-.contactDescription {width:300px;font-size:15px;font-family:'futura';margin:-7px 0px 0px 0px;float:left;text-align:center;}
-.formContact {width:200px;text-align:left;float:left;margin:0px 15px 0px 35px;}	
+.contact {display:none;}	
+.contactDescription {display:none;}
+.formContact {display:none;}	
 
 }

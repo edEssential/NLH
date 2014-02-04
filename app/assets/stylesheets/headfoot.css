@@ -60,6 +60,7 @@ body.shows_controller #navigation a.showsnav
 #rulers{position:absolute;margin-top:432px;}
 .left {float:left;margin:2px 32px 0px 1px;}
 .right {float:right;margin:2px 0px 0px 0px;}
+.left2, .right2 {display:none;}
 .navrulers {position:absolute;margin:-275px 0px 0px 2px;}
 .strapline {
 	font-family:"Brandon Grotesque";
@@ -90,15 +91,116 @@ body.shows_controller #navigation a.showsnav
 
 @media only screen and (min-width: 480px) and (max-width: 610px) {
 
-.container {
-	width:100%;
-	max-width:480px;
+.header {
+	width:460px;
 }
+.logo {
+	width:100px;
+	margin:10px 0px 0px 10px;
+}
+.logo img {
+	max-width:100%;
+}
+.navigationButtons {
+	margin:125px 0px 0px 100px;
+}
+.navigationButtons a {
+	font-family:"Futura";
+	color:black;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:14px;
+	letter-spacing:0px;
+}
+li {
+	text-align:left;
+	display:inline;
+}
+#about {
+	margin:0px;
+}
+#work {
+	margin:10px 0px 0px -7px;
+}
+#contact {
+	margin:10px 0px 0px 10px;
+}
+#links {
+	margin:10px 0px 0px 10px;
+}
+.socialNav {
+	position:absolute;
+	margin:-26px 0px 0px 373px;
+}
+.socialNavButtons {
+	width:20px;
+	margin-right:-2px;
+}
+.socialNavButtons img {
+	width:30px;
+}
+#rulers {display:none;}.navrulers {display:none;}
+.left2 {display:none;}
+.right2 {display:none;}
+.right3 {position:absolute;width:330px;margin:95px 10px 0px 132px;}
+.right3 img {max-width:100%;}
+.strapline {display:none;}
+.footer{display:none;}
 }
 
 @media only screen and (max-width: 479px) {
 
-.container {
-	max-width:320px;
+.header {
+	width:300px;
 }
+.logo {
+	width:120px;
+	margin:40px 0px 0px 100px;
+}
+.logo img {
+	max-width:100%;
+}
+.navigationButtons {
+	margin:210px 0px 0px -23px;
+}
+.navigationButtons a {
+	font-family:"Futura";
+	color:black;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:22px;
+	letter-spacing:2px;
+}
+li {
+	text-align:center;
+	display:block;
+}
+#about {
+	margin:0px;
+}
+#work {
+	margin:10px 0px 0px 0px;
+}
+#contact {
+	margin:10px 0px 0px 0px;
+}
+#links {
+	margin:10px 0px 0px 0px;
+}
+.socialNav {
+	position:absolute;
+	margin:15px 0px 0px 97px;
+}
+.socialNavButtons {
+	width:20px;
+	margin-right:-5px;
+}
+.socialNavButtons img {
+	width:40px;
+}
+#rulers {display:none;}.navrulers, .right3 {display:none;}
+.left2 {display:block;position:absolute;width:300px;margin:175px 0px 0px 10px;}.left2 img {max-width:100%;}
+.right2 {display:block;position:absolute;width:300px;margin:385px 0px 0px 10px;}.right2 img {max-width:100%;}
+.strapline {display:none;}
+.footer{display:none;}
 }
