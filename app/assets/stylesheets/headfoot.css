@@ -1,38 +1,58 @@
 @charset "UTF-8";
 /* CSS Document */
 
-*, body {
-	margin: 0;
-}
-.container {
-	max-width:945px;
-	margin:0 auto;
-	clear:right;
-	z-index:100;
-}	
-.header {
-}
-.navigationContainer {
-}
-.navigationButtons {
-}
-.navigationButtons a {
-}
-ul {
-	text-decoration:none;
-}
-li {
-	display:inline;
-}
+*, body {margin: 0;}
+.container {max-width:945px;margin:0 auto;clear:right;z-index:100;}
+.logo {width:177px;margin:65px auto;}
+.navigationContainer {margin:-165px 0px 0px 0px;}
+.navigationButtons a {font-family:"Helvetica Neue";color:black;text-decoration:none;text-transform:uppercase;font-size:16px;letter-spacing:4px;}
+#about {margin-left:-40px;}
+#work {margin-left:-37px;}
+#contact {margin-left:66px;}
+#links {margin-left:434px;}
+.socialNav {display:block;width:100px;margin:-28px 0px 0px 850px;}
+.socialNav img {width:35px;margin-left:-5px;}
+#rulers{position:absolute;margin-top:42px;}
+.left {float:left;margin:2px 32px 0px 1px;}
+.right {float:right;margin:2px 0px 0px 0px;}
+.navrulers {position:absolute;margin:-275px 0px 0px 2px;}
+.strapline {font-family:"Brandon Grotesque";font-size:60px;width:380px;margin:129px auto 0px auto;}
+ul {text-decoration:none;}
+li {display:inline;}
+.linkGray, .linkGray a {color:#595959;font-family:"helvetica";text-decoration:none;}
+.links {color:#62cecc;font-family:"helvetica";text-decoration:none;}
+.desc {display:none;}
+h1 {font-family:"Brandon Grotesque";}
 
 body.home_controller  #navigation a.homenav,
 body.releases_controller  #navigation a.homenav,
 body.videos_controller #navigation a.videosnav,
 body.shows_controller #navigation a.showsnav,
-body.contacts_controller #navigation a.contactsnav,
-body.thanks_controller #navigation a.contactsnav
-{
-  color:#bdbdbd;
+body.contacts_controller #navigation a.contact,
+body.thanks_controller #navigation a.contactsnav {color:#bdbdbd;}
+
+@media only screen and (min-width: 768px) and (max-width: 955px) {
+
+.container {width:460px;}
+.header {width:460px;}
+.logo {width:100px;margin:20px 20px 0px 10px;}
+.logo img {max-width:100%;}
+#rulers {position:relative;margin-top:0;}
+.navrulers, .strapline {display:none;}
+.rulers, .left, .right {width:300px;margin:0 auto;float:none;}
+.left img, .right img {max-width:100%;}
+.left {display:none;}
+.right {width:318px;margin:-7px 0px 0px 45px;}
+.navigationContainer {width:460px;margin:0 auto;}
+.navigationButtons {width:320px;margin:-43px 0px 0px 85px;}
+.navigationButtons a {display:inline;text-align:left;font-family:"futura";font-size:14px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;color:black;margin:0px 5px 6px 0px;}
+#about {margin-left:0px;}
+#work {margin-left:0px;}
+#contact {margin-left:0px;}
+#links {margin-left:0px;}
+.socialNav {display:block;width:100px;margin:-26px 0px 0px 365px;}
+.socialNav img {width:32px;margin-left:-5px;}
+.footer {display:none;}
 }
 
 @media only screen and (min-width: 611px) and (max-width: 767px) {
@@ -41,16 +61,21 @@ body.thanks_controller #navigation a.contactsnav
 .header {width:460px;}
 .logo {width:100px;margin:20px 20px 0px 10px;}
 .logo img {max-width:100%;}
-.rulers, .left, .right {width:300px;margin:0 auto;}
+#rulers {position:relative;margin-top:0;}
+.navrulers, .strapline {display:none;}
+.rulers, .left, .right {width:300px;margin:0 auto;float:none;}
 .left img, .right img {max-width:100%;}
 .left {display:none;}
 .right {width:318px;margin:-7px 0px 0px 45px;}
 .navigationContainer {width:460px;margin:0 auto;}
 .navigationButtons {width:320px;margin:-43px 0px 0px 85px;}
 .navigationButtons a {display:inline;text-align:left;font-family:"futura";font-size:14px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;color:black;margin:0px 5px 6px 0px;}
+#about {margin-left:0px;}
+#work {margin-left:0px;}
+#contact {margin-left:0px;}
+#links {margin-left:0px;}
 .socialNav {display:block;width:100px;margin:-26px 0px 0px 365px;}
 .socialNav img {width:32px;margin-left:-5px;}
-.navrulers, .strapline {display:none;}
 .footer {display:none;}
 }
 
@@ -60,16 +85,21 @@ body.thanks_controller #navigation a.contactsnav
 .header {width:460px;}
 .logo {width:100px;margin:20px 20px 0px 10px;}
 .logo img {max-width:100%;}
-.rulers, .left, .right {width:300px;margin:0 auto;}
+#rulers {position:relative;margin-top:0;}
+.navrulers, .strapline {display:none;}
+.rulers, .left, .right {width:300px;margin:0 auto;float:none;}
 .left img, .right img {max-width:100%;}
 .left {display:none;}
 .right {width:318px;margin:-7px 0px 0px 45px;}
 .navigationContainer {width:460px;margin:0 auto;}
 .navigationButtons {width:320px;margin:-43px 0px 0px 85px;}
 .navigationButtons a {display:inline;text-align:left;font-family:"futura";font-size:14px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;color:black;margin:0px 5px 6px 0px;}
+#about {margin-left:0px;}
+#work {margin-left:0px;}
+#contact {margin-left:0px;}
+#links {margin-left:0px;}
 .socialNav {display:block;width:100px;margin:-26px 0px 0px 365px;}
 .socialNav img {width:32px;margin-left:-5px;}
-.navrulers, .strapline {display:none;}
 .footer {display:none;}
 }
 
@@ -79,15 +109,20 @@ body.thanks_controller #navigation a.contactsnav
 .header {width:300px;}
 .logo {width:130px;margin:20px auto 0px auto;}
 .logo img {max-width:100%;}
-.rulers, .left, .right {width:300px;margin:0 auto;}
+#rulers {position:relative;margin-top:0;}
+.navrulers, .strapline {display:none;}
+.rulers, .left, .right {width:300px;margin:0 auto;float:none;}
 .left img, .right img {max-width:100%;}
 .left {position:absolute;margin-top:-172px;}
 .navigationContainer {width:300px;margin:0 auto;}
 .navigationButtons {width:300px;margin:35px 0px 0px -22px;}
 .navigationButtons a {display:block;text-align:center;font-family:"futura";font-size:19px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;color:black;margin:0px 0px 6px 0px;}
-.socialNav {display:block;width:200px;margin:10px 0px 0px 83px;}
-.socialNav img {width:40px;}
-.navrulers, .strapline {display:none;}
+#about {margin-left:0px;}
+#work {margin-left:0px;}
+#contact {margin-left:0px;}
+#links {margin-left:0px;}
+.socialNav {display:block;width:200px;margin:10px 0px 0px 100px;}
+.socialNav img {width:35px;}
 .footer {display:none;}
 }
 
