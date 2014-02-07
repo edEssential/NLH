@@ -1,5 +1,7 @@
 class WorksController < ApplicationController
   
+  before_filter :authenticate_user!, :except => [:show, :index]
+  
   def new
     @work = Work.new
   end
@@ -35,9 +37,10 @@ class WorksController < ApplicationController
   end
   
   def index
-    @work = Work.includes(:category).order("category_id")
-    @work_categories = @work.group_by { |w| w.category.name }
-    @work_categories = @work_categories.sort
+    #@work = Work.includes(:category).order("category_id")
+    #@work_categories = @work.group_by { |w| w.category.name }
+    #@work_categories = @work_categories.sort
+    @work = Work.all
   end
   
   # index when the work header action is dropdown list
