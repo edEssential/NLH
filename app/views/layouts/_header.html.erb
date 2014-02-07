@@ -6,7 +6,7 @@
 		<div class="user">
 			{ Logged in as <strong><%= current_user.email %></strong>
 			<span class="editLinkText2"><%= link_to 'Edit', edit_user_registration_path %></span>
-			<span class="editLinkText2"><%= link_to 'Logout', destroy_user_session_path, method: :delete %> }</span>
+			<span class="editLinkText2"><%= link_to 'Signout', destroy_user_session_path, method: :delete %> }</span>
 		</div>
 	<% end %>
 	<div class="navigationContainer" id="navigation">
@@ -37,9 +37,9 @@
 			<li><%#= link_to 'All', "/works" %></li>
 		</ul>
 	</div>-->
-	<% if current_page?(url_for(:controller => 'home', :action => 'index'))  %>
+	<%# if current_page?(url_for(:controller => 'home', :action => 'index'))  %>
 		<div class="strapline">&nbsp;<div class="fader">Music for Image</div></div>
-	<% else %>
-		<div class="noFader">Music for Image</div>
-	<% end %>
+	<%# else %>
+		<!--<div class="noFader">Music for Image</div>-->
+	<%# end %>
 </div>
