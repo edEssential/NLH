@@ -1,27 +1,7 @@
-.border {	
-}
 .formHeader {font-size:24px;font-weight:800;margin:25px 0px 15px 0px}
 .pinkMe {color:#000000;}
-.formText {
-	width:945px;
-	float:left;
-	text-align:center;
-	margin:87px auto 150px auto;
-	font-size:20px;
-	font-family:"brandon grotesque";
-	font-weight:400;
-	line-height:20px;
-	color:#333333;
-}
-.form {
-	width:600px;
-	padding:25px 0px;
-	margin:0px auto 150px auto;
-	border:3px solid #727070;
-	-moz-border-radius: 15px;
-	border-radius: 15px;
-	text-align:center;
-}
+.formText {width:945px;float:left;text-align:center;margin:87px auto 150px auto;font-size:20px;font-family:"brandon grotesque";font-weight:400;line-height:20px;color:#333333;}
+.form {width:600px;padding:25px 0px;margin:0px auto 150px auto;border:3px solid #727070;-moz-border-radius: 15px;border-radius: 15px;text-align:center;}
 .formField {margin:10px 0px 0px 0px;}
 .formFieldBox {width:70%;margin:1% 0% 3% 0% !important;}
 .formFieldBox2 {margin:1% 0% 3% 0% !important;}
@@ -32,13 +12,7 @@ i {font-size:13px;}
 .user {position:absolute;margin:80px 0px 0px 0px;}
 .userInfo strong, .userInfo2 strong, .user strong, .user2 strong {color:#858585;}
 .editLinkText {color:#ff00ff;font-family:"nimbus-sans", "Helvetica Neue", Helvetica, Arial, sans-serif;font-weight:400;}
-.editLinkText a, .editLinkText2 a {
-	color:#AAAAAA;
-	font-family:"nimbus-sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-weight:400;
-	text-transform:uppercase;
-	font-size:18px;
-}
+.editLinkText a, .editLinkText2 a {color:#AAAAAA;font-family:"nimbus-sans", "Helvetica Neue", Helvetica, Arial, sans-serif;font-weight:400;text-transform:uppercase;font-size:18px;}
 .editLinkText2 a {font-size:12px;}
 .artistEditLink, .artistDeleteLink {margin:-30px 0px 10px 38px;width:18px;}
 .artistDeleteLink {margin:-34px 0px 10px 60px;}
@@ -49,22 +23,18 @@ i {font-size:13px;}
 .downloadCSV3 {position:absolute;margin:286px 0px 0px 190px;}
 .editHome {float:left;max-width:22px;margin:25px 0px 0px -2px}
 .editHome img {width:100%;}
-
+.editWork, .deleteWork {float:right;max-width:20px;margin:-18px 0px 0px 0px;}
+.editWork img, .deleteWork img {width:100%;}
 .editRelease2 {float:left;max-width:22px;margin:-24px 0px 0px 165px;}
-
 .editAbout {position:absolute;max-width:22px;margin:300px 0px 0px -755px;}
 .editRelease2 img, .editAbout img {width:100%;}
-
-.editRelease3 {float:left;max-width:22px;margin:-40px 0px 0px 273px;}
+.editRelease3 {float:left;max-width:22px;margin:20px 0px 0px 0px;}
 .editRelease3 img {width:100%;}
-
 .fixer {margin-right:35px;}
 .editVideo2, .deleteVideo2 {float:left;}
 .editVideo, .deleteVideo {margin-top:-25px;}
-
 h1 {font-size:26px;margin:15px 0px;}
 .file {margin-left:20px;}
-
 
 @media only screen and (min-width: 480px) and (max-width: 610px) {
 

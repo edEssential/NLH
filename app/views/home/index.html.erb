@@ -32,6 +32,9 @@
 				<div class="homeVideo">
 					<div class="homeVideoTitle"><%= w.title %></div>
 					<div class="homeVideoVideo"><%= w.home_url_html %></div>
+					<div class="homeSecond"><%= w.second_url_html %></div>
+					<div class="homeThird"><%= w.third_url_html %></div>
+					<div class="homeFourth"><%= w.fourth_url_html %></div>
 					<div class="homeVideoInfo"><%= simple_format(truncate (w.homepageinfo), length: 100, :separator => ' ') rescue nil %><%= link_to 'SEE MORE', work_path(w), :class => 'more links' %></div>
 				</div>
 			</div>

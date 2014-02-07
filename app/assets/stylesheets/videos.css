@@ -1,55 +1,51 @@
-.videoHolder {
-	float:left;
-	margin-top:110px;
+.videoHolder {float:left;margin-top:110px;}
+.inline {display:inline;width:945px;}
+.clientTitle, .clientTitle2 {margin:4px 0px;font-family:"Brandon Grotesque";font-weight:100;font-size:14px;}
+.clientTitle2 {float:left;font-weight:400;font-size:24px;margin:4px 0px 25px 0px;}
+.pipe {margin:0px 6px;}
+.VideoInfo {float:left;font-family:"helvetica";font-size:13px;line-height:18px;color:#828282;margin:25px 0px;}
+.indexHolder {float:left;margin:130px 0px 50px 0px;display:inline;}
+.categoryHeaders {font-family:"Brandon Grotesque";font-size:16px;font-weight:800;margin:20px 0px 40px 0px;}
+.individualVideo {float:left;margin:0px 8px 20px 8px;}
+.howWide1 {}	
+.howWide2 {}
+.howWide3 {margin-left:120px;}
+.second, .third, .fourth {display:none;}
+
+@media only screen and (min-width: 768px) and (max-width: 955px) {
+
+.large, .third, .fourth {display:none;}
+.second {display:inline;}
+.videoHolder, .indexHolder {width:561px;float:right;margin:53px 0px 0px 0px;}
+.indexHolder {float:left;width:698px;margin-left:78px;}
+.individualVideo {width:208px;margin-left:7px;}
+.individualVideo img {max-width:100%;}
 }
-.inline {
-	display:inline;
-	width:945px;
+
+@media only screen and (min-width: 611px) and (max-width: 767px) {
+
+.large, .third, .fourth {display:none;}
+.second {display:inline;}
+.videoHolder, .indexHolder {width:561px;float:left;margin:63px 0px 0px 10px;}
+.indexHolder {width:481px;margin-left:125px;}
+.individualVideo {width:208px;margin-left:7px;}
+.individualVideo img {max-width:100%;}
 }
-.clientTitle, .clientTitle2 {
-	margin:4px 0px;
-	font-family:"Brandon Grotesque";
-	font-weight:100;
-	font-size:14px;
+
+@media only screen and (min-width: 480px) and (max-width: 610px) {
+
+.large, .second, .fourth {display:none;}
+.third {display:inline;}
+.videoHolder, .indexHolder {width:430px;float:left;margin:33px 0px 0px 16px;}
+.indexHolder {width:470px;margin-left:10px;}
+.individualVideo {width:208px;margin-left:7px;}
+.individualVideo img {max-width:100%;}
 }
-.clientTitle2 {
-	float:left;
-	font-weight:400;
-	font-size:24px;
-	margin:4px 0px 25px 0px;
-}
-.pipe {
-	margin:0px 6px;
-}
-.VideoInfo {
-	float:left;
-	font-family:"helvetica";
-	font-size:13px;
-	line-height:18px;
-	color:#828282;
-	margin:25px 0px;
-}
-.indexHolder {
-	float:left;
-	margin:130px 0px 50px 0px;
-	display:inline;
-}
-.categoryHeaders {
-	font-family:"Brandon Grotesque";
-	font-size:16px;
-	font-weight:800;
-	margin:20px 0px 40px 0px;
-}
-.individualVideo {
-	float:left;
-	margin:0px 8px 20px 8px;
-}
-.howWide1 {
-	
-}
-.howWide2 {
-	
-}
-.howWide3 {
-	margin-left:120px;
+
+@media only screen and (max-width: 479px) {
+
+.large, .third, .second {display:none;}
+.fourth {display:inline;}
+.videoHolder, .indexHolder {width:300px;float:left;margin:23px 0px 0px 0px;}
+.indexHolder {width:280px;margin-left:28px;}
 }

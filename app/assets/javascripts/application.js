@@ -12,6 +12,8 @@ $(document).on('mouseover', '#work_header_tip', function () { $(this).tooltip('s
 $(document).ready(function () {
 	$('.container').hide();
 	$('.container').delay(1500).fadeIn(500);
+	$('.fader').hide();
+	$('.fader').delay(2500).fadeIn(1000);
 	$('#work_posthome').change(function() {
 	    $('#homepageinfo').toggle();
 	});

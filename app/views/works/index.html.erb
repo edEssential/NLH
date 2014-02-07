@@ -26,7 +26,15 @@
 	<% @work.each do |work| %>
 		<div class="individualVideo">
 			<div><%= link_to image_tag(work.image.url(:medium)), work %></div>
-			<div class="clientTitle"><em><%= work.client %></em><span class="pipe">|</span><em><%= work.title %></em></div>
+			<div class="clientTitle">
+				<em><%= work.client %></em><span class="pipe">|</span><em><%= work.title %></em>
+				<% if user_signed_in? %>
+					<div class="editDeleteHolder">
+						<span class="editWork"><%= link_to image_tag('edit2.png'), edit_work_path(work) %></span>
+						<span class="deleteWork"><%= link_to image_tag('delete2.png'), work, :method => 'delete' %></span>
+					</div>
+				<% end %>
+			</div>
 		</div>
 	<% end %>
 </div>

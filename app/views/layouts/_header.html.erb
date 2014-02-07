@@ -37,13 +37,9 @@
 			<li><%#= link_to 'All', "/works" %></li>
 		</ul>
 	</div>-->
-	
-	<div class="strapline">Music for image</div>
-	<%# if user_signed_in? %>
-		<!--<div class="userInfo">
-			{ Logged in as <strong><%#= current_user.email %></strong>
-			<span class="linkPink"><%#= link_to 'Edit', edit_user_registration_path %></span>
-			<span class="linkPink"><%#= link_to 'Logout', destroy_user_session_path, method: :delete %></span> }
-		</div>-->
-	<%# end %>
+	<% if current_page?(url_for(:controller => 'home', :action => 'index'))  %>
+		<div class="strapline">&nbsp;<div class="fader">Music for Image</div></div>
+	<% else %>
+		<div class="noFader">Music for Image</div>
+	<% end %>
 </div>

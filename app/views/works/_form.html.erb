@@ -1,5 +1,9 @@
 <div class="formText formFade">
-	<p class="formHeader Gray">Add case studies to the work page of your site!</p><br /><br />
+	<% if current_page?(url_for(:controller => 'works', :action => 'edit'))  %>
+		<p class="formHeader Gray">Change this case studies content</p><br /><br />
+	<% else %>
+		<p class="formHeader Gray">Add case studies to the work page of your site!</p><br /><br />
+	<% end %>
 	<div class="form">	
 		<%= form_for(@work) do |f| %>
 			<%= f.label :Video_url?, class: 'formFieldT2' %>
