@@ -1,8 +1,8 @@
-.info {width:320px;float:left;clear:both;font-family:"Brandon Grotesque";font-size:24px;line-height:28px;font-weight:100;margin-top:125px;}
+.info {width:320px;float:left;clear:both;font-family:"Brandon Grotesque";font-size:21px;line-height:24px;font-weight:100;margin-top:125px;}
 .soundcloud {position:absolute;margin:113px 0px 0px 354px;}
 .titles {width:550px;height:60px;background-color:#e6e6e6;border-top-left-radius:15px;-moz-border-radius-topleft:15px;-webkit-border-top-left-radius:15px;}
 ul {margin:0;}
-.setTitle {font-size:16px;letter-spacing:0px;float:left;margin:20px 30px -10px 0px;}
+.setTitle {font-size:15px;letter-spacing:0px;float:left;margin:20px 30px -10px 0px;}
 .setTitle a {text-decoration:none;}
 #tabs-1, #tabs-2, #tabs-3 {width:590px;height:800px;}
 .belowTheFold {float:left;clear:both;margin-top:177px;width:100%;border-top:3px solid #cccccc;padding:60px 0px 50px 0px;}
