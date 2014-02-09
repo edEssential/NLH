@@ -11,7 +11,7 @@
 .howWide2 {}
 .howWide3 {margin-left:120px;}
 .second, .third, .fourth {display:none;}
-.placeholder {padding:-1px -1px -1px -1px;border:1px solid #021a40;}
+.placeholder {width:220px;height:133px;padding:-1px -1px -1px -1px;border:1px solid #021a40;}
 
 @media only screen and (min-width: 768px) and (max-width: 955px) {
 
