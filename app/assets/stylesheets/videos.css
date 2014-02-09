@@ -6,11 +6,12 @@
 .VideoInfo {float:left;font-family:"helvetica";font-size:13px;line-height:18px;color:#828282;margin:25px 0px;}
 .indexHolder {float:left;margin:130px 0px 50px 0px;display:inline;}
 .categoryHeaders {font-family:"Brandon Grotesque";font-size:16px;font-weight:800;margin:20px 0px 40px 0px;}
-.individualVideo {float:left;margin:0px 8px 20px 8px;}
+.individualVideo {float:left;margin:0px 8px 20px 6px;}
 .howWide1 {}	
 .howWide2 {}
 .howWide3 {margin-left:120px;}
 .second, .third, .fourth {display:none;}
+.placeholder {padding:-1px -1px -1px -1px;border:1px solid #021a40;}
 
 @media only screen and (min-width: 768px) and (max-width: 955px) {
 
