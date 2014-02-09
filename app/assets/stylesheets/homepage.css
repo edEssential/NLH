@@ -5,7 +5,7 @@ ul {margin:0;}
 .setTitle {font-size:15px;letter-spacing:0px;float:left;margin:20px 30px -10px 0px;}
 .setTitle a {text-decoration:none;}
 #tabs-1, #tabs-2, #tabs-3 {width:590px;height:800px;}
-.belowTheFold {float:left;clear:both;margin-top:177px;width:100%;border-top:3px solid #cccccc;padding:60px 0px 50px 0px;}
+.belowTheFold {float:left;clear:both;margin-top:63px;width:100%;border-top:3px solid #cccccc;padding:60px 0px 50px 0px;}
 .homeVideoHolder {float:left;width:331px;height:305px;margin:0px 0px 40px 90px;border-bottom:1px solid #cccccc;}
 .homeVideo {float:left;}
 .homeSecond, .homeThird, .homeFourth {display:none;}
