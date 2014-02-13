@@ -5,7 +5,7 @@
 .container {max-width:945px;margin:0 auto;clear:right;z-index:100;}
 .logo {width:177px;margin:65px auto;}
 .navigationContainer {margin:-165px 0px 0px 0px;}
-.navigationButtons a {font-family:"Helvetica Neue";color:black;text-decoration:none;text-transform:uppercase;font-size:16px;letter-spacing:4px;}
+.navigationButtons a {font-family:"futura";color:black;text-decoration:none;text-transform:uppercase;font-size:16px;letter-spacing:4px;}
 #about {margin-left:-40px;}
 #work {margin-left:-37px;}
 #contact {margin-left:66px;}

@@ -1,0 +1,8 @@
+<% @links.each do |l| %>
+	<table>
+		<tr>
+			<td width="20%"><%= display_content_with_links(l) %></td>
+			<td width="50%"><%= l.created_at %></td>
+		</tr>
+	</table>
+<% end %>

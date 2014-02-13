@@ -17,7 +17,7 @@
 					</a>
 					<!--<a href="#" id="work" data-dropdown="#dropdown-1">Work</a>-->
 					<li id="contact"><%= link_to 'Contact', contacts_path %></li>
-					<li id="links"><%= link_to 'Links', root_path %></li>
+					<li id="links"><%= link_to 'Links', links_path %></li>
 					<!--<li id="links"><%= link_to 'Links', root_path %></li>-->
 				</ul>
 			</div>
@@ -37,9 +37,9 @@
 			<li><%#= link_to 'All', "/works" %></li>
 		</ul>
 	</div>-->
-	<%# if current_page?(url_for(:controller => 'home', :action => 'index'))  %>
+	<% if controller.controller_name == 'home' && controller.action_name == 'index' %>
 		<div class="strapline">&nbsp;<div class="fader">Music for Image</div></div>
-	<%# else %>
-		<!--<div class="noFader">Music for Image</div>-->
-	<%# end %>
+	<% else %>
+		<div class="noFader">Music for Image</div>
+	<% end %>
 </div>

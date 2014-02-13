@@ -1,6 +1,6 @@
 V1::Application.routes.draw do
 
-  devise_for :user, :path => '', :path_names => { :sign_in => "login", :sign_out => "logout", :sign_up => "register" }
+  devise_for :users, path: '', path_names: { sign_in: "login" }
 
   root :to => 'home#index'
   match "works/new" => "works#new" 
@@ -10,5 +10,6 @@ V1::Application.routes.draw do
   resources :works
   resources :contacts
   resources :thanks
+  resources :links
   
 end

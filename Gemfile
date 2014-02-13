@@ -11,6 +11,7 @@ gem "twitter-bootstrap-rails"
 gem "auto_html"
 gem "jquery-rails"
 gem "devise"
+gem "grackle"
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
