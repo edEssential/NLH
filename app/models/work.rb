@@ -2,6 +2,8 @@ class Work < ActiveRecord::Base
   attr_accessible :about, :client, :title, :category_id, :home_url, :homepageinfo, :posthome, :large_url, :small_url, :image, :second_url, :third_url, :fourth_url
   belongs_to :category
   
+  validates :image, :dimensions => { :width => 220, :height => 133 }
+  
   before_save :create_sizes
   
   has_attached_file :image, styles: {
@@ -60,6 +62,6 @@ class Work < ActiveRecord::Base
     self.second_url = self.home_url
     self.third_url = self.home_url
     self.fourth_url = self.home_url
-  end  
+  end
   
 end

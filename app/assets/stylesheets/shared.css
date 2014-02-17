@@ -11,6 +11,8 @@ html, body {
 .links {color:#62cecc;font-family:"helvetica";text-decoration:none;}
 .desc {display:none;}
 h1 {font-family:"Brandon Grotesque";}
+.message {font-size:20px;text-transform:uppercase;margin:10px auto 25px auto;padding:10px;width:330px;background-color:#ffffff;border:1px dotted #000000;-moz-border-radius: 10px;border-radius: 10px;}
+.warning {color:#ff0000}
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 
