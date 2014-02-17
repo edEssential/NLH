@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140217091457) do
+ActiveRecord::Schema.define(:version => 20140217092031) do
 
   create_table "abouts", :force => true do |t|
     t.datetime "created_at", :null => false
@@ -35,10 +35,10 @@ ActiveRecord::Schema.define(:version => 20140217091457) do
   end
 
   create_table "homeposts", :force => true do |t|
-    t.string   "url1"
-    t.string   "url2"
-    t.string   "url3"
-    t.string   "url4"
+    t.text     "url1"
+    t.text     "url2"
+    t.text     "url3"
+    t.text     "url4"
     t.string   "title1"
     t.string   "title2"
     t.string   "title3"
