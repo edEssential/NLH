@@ -83,6 +83,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.25)
     multi_json (1.8.2)
+    newrelic_rpm (3.6.8.168)
     nokogiri (1.5.10)
     oauth (0.4.7)
     orm_adapter (0.4.0)
@@ -172,6 +173,7 @@ DEPENDENCIES
   jquery-rails
   jquery-ui-rails
   less-rails
+  newrelic_rpm
   paperclip
   pg (= 0.15.1)
   rails (= 3.2.13)
