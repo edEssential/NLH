@@ -1,0 +1,39 @@
+<div>
+	<ul id="overview" class="container">
+		<li class="three columns">
+			<div class="block clearfix">
+				<span class="icon"><%= image_tag('tweetsIcon.png') %></span>
+				<h3 class="title">About me</h3>
+				<p class="description"></p><br />
+				<div class="info"><%= simple_format(@homepost.info) %></div>
+				<% if user_signed_in? %>
+					<%= link_to image_tag('edit2.png'), edit_homepost_path(1), :class => "editHome" %>
+				<% end %>
+			</div>	
+		</li>
+		<li class="six columns">
+			<div class="block clearfix">
+				<span class="icon"><%= image_tag('musicIcon.png') %></span>
+				<h3 class="title">Music</h3>
+				<p class="description"></p>
+				<div id="tabs">
+					<ul>
+						<li><a href="#tab-1"><%= @homepost.title1 rescue nil %></span></a></li>
+						<li><a href="#tab-2"><%= @homepost.title2 rescue nil %></span></a></li>
+					</ul>
+					<div id="tab-1"><%= @homepost.url1.html_safe rescue nil %></div>
+					<div id="tab-2"><%= @homepost.url2.html_safe rescue nil %></div>
+				</div>
+			</div>	
+		</li>
+		<li class="three columns">
+			<div class="block clearfix">
+				<span class="icon"><%= image_tag('tweetsIcon.png') %></span>
+				<h3 class="title">Tweets</h3>
+				<p class="description"></p>
+				<a class="twitter-timeline" href="https://twitter.com/NathLiddleHulme" data-chrome="noheader nofooter noborders transparent" data-widget-id="434014773219323905">Tweets by @NathLiddleHulme</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			</div>	
+		</li>
+	</ul>
+</div>

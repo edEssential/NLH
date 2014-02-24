@@ -1,0 +1,16 @@
+<section id="work-home" data-type="background" data-speed="10">
+	
+	<ul id="overview" class="container twelve columns">
+		<% @work.each do |w| %>
+			<li class="six columns">
+				<div class="block2 clearfix">
+					<h3 class="post-title white"><%= w.title %></h3>
+					<div class="video marginTop"><%= w.url_html %></div>
+					<div class="text2 marginTopHalf white"><%= simple_format(truncate (w.homepageinfo), length: 150, :separator => ' ') rescue nil %></div>
+					<div class="marginTopQuater"><%= link_to 'SEE MORE', work_path(w), :class => 'reversed text2' %></div>
+				</div>	
+			</li>
+		<% end %>
+	</ul>
+	<div class="parallax" data-velocity="0.1"></div>
+</section>

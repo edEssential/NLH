@@ -14,18 +14,14 @@
 		<%= csrf_meta_tags %>
   
 	</head>
-	<body class="<%= params[:controller] %>_controller">
-	
-		<div class="container">
+	<body>
 		
-			<div id="header"><%= render 'layouts/header' %></div>
-			<div id="rulers"><%= render 'layouts/rulers' %></div>
+		<%= render 'layouts/header' %>
+		<div class="rulers"><%= render 'layouts/rulers' %></div>
 		
-			<%= yield %>
+		<%= yield %>
 			
-			<div id="mover"><%= render 'layouts/footer' %></div>
-		
-		</div>
+		<%= render 'layouts/footer' %>
 
 	</body>
 </html>

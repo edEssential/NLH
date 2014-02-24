@@ -1,45 +1,7 @@
-<!--<h1 class="categoryHeader"><%#= @category.upcase rescue nil %></h1>
-<div class='<%#= counter %>'>
-	<%# @work.each do |w| %>
-		<div class="video">
-			<div><%#= link_to image_tag(w.image.url(:medium)), w %></div>
-			<div class="clientTitle"><em><%#= w.client %></em><span class="pipe">|</span><em><%#= w.title %></em></div>
-		</div>
-	<%# end %>
-</div>-->
-
-<!--<div class="indexHolder">
-	<%# @work_categories.each do |category, work| %>
-		<div class="categoryHeaders"><%#= category.upcase %></div>
-		<div class='<%#= counter %>'>
-			<%# work.each do |work| %>
-				<div class="individualVideo">
-					<div><%#= link_to image_tag(work.image.url(:medium)), work %></div>
-					<div class="clientTitle"><em><%#= work.client %></em><span class="pipe">|</span><em><%#= work.title %></em></div>
-				</div>
-			<%# end %>
-		</div>
-	<%# end %>
-</div>-->
-
-<div class="indexHolder">
-	<% @work.each do |work| %>
-		<div class="individualVideo">
-			<div class="placeholder"><%= link_to image_tag(work.image.url(:medium)), work %></div>
-			<div class="clientTitle">
-				<em><%= work.client %></em><span class="pipe">|</span><em><%= work.title %></em>
-				<% if user_signed_in? %>
-					<div class="editDeleteHolder">
-						<span class="editWork"><%= link_to image_tag('edit2.png'), edit_work_path(work) %></span>
-						<span class="deleteWork"><%= link_to image_tag('delete2.png'), work, :method => 'delete' %></span>
-					</div>
-				<% end %>
-			</div>
-		</div>
-	<% end %>
-</div>
-<% if user_signed_in? %>
-	<div class="newWork">
-		<span class="editWork"><%= link_to image_tag('edit2.png'), new_work_path %></span>
+<div class="container">
+	<div class="twelve columns">
+		<% @work.each do |w| %>
+			<div class="video"><%= w.url_html %></div>
+		<% end %>
 	</div>
-<% end %>
+</div>

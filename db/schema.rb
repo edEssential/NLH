@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140217092031) do
+ActiveRecord::Schema.define(:version => 20140222160900) do
 
   create_table "abouts", :force => true do |t|
     t.datetime "created_at", :null => false
@@ -32,6 +32,11 @@ ActiveRecord::Schema.define(:version => 20140217092031) do
     t.datetime "updated_at",  :null => false
     t.string   "title"
     t.string   "text"
+  end
+
+  create_table "dimensions_validators", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "homeposts", :force => true do |t|
@@ -80,18 +85,13 @@ ActiveRecord::Schema.define(:version => 20140217092031) do
     t.datetime "created_at",         :null => false
     t.datetime "updated_at",         :null => false
     t.integer  "category_id"
-    t.string   "home_url"
     t.string   "homepageinfo"
     t.boolean  "posthome"
-    t.string   "large_url"
-    t.string   "small_url"
+    t.string   "url"
     t.string   "image_file_name"
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
-    t.string   "second_url"
-    t.string   "third_url"
-    t.string   "fourth_url"
   end
 
 end
