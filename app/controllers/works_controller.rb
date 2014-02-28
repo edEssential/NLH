@@ -40,7 +40,7 @@ class WorksController < ApplicationController
     #@work = Work.includes(:category).order("category_id")
     #@work_categories = @work.group_by { |w| w.category.name }
     #@work_categories = @work_categories.sort
-    @work = Work.all
+    @works = Work.all
   end
   
   # index when the work header action is dropdown list

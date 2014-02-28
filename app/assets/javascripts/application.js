@@ -12,4 +12,20 @@
 $(document).ready(function(){
     $(".video").fitVids();
 	$('.parallax').scrolly({bgParallax: true});
+	$(function(){
+	 	var $masonry = $('#portfolio');
+
+	 	$masonry.imagesLoaded( function(){
+		 	$masonry.masonry({
+		      itemSelector: '.thumbnail',
+		      isResizable: true,
+		      isAnimated: true,
+		      columnWidth: function( containerWidth ) {
+				return containerWidth / 3;
+			  }
+		    });
+
+		});   
+		
+	 });
 });

@@ -1,9 +1,9 @@
-<header class="container">
+<!--<header class="container">
 
-	<!-- Logo -->
+	Logo
 	<div id="logo" class="three columns">
 		<div id="spiral">
-			<div class="headLogo"><%= link_to image_tag('logoNew.png'), root_path %></div>
+			<div class="headLogo"><%#= link_to image_tag('logoNew.png'), root_path %></div>
 		</div>
 	</div>
 	
@@ -11,8 +11,48 @@
 		<h1 class="title">Music for image</h1>
 	</div>
 	
-	<!-- Navigation -->
+	Navigation
 	<nav id="nav" class="five columns">
+		<ul id="navigation">
+			<li><a href="#tweets">News</a></li>
+			<li><%#= link_to 'Work', works_path %></li>
+			<li><%#= link_to 'Contact', contacts_path %></li>
+			<li class="twitter"><%#= image_tag('twitter.png') %></li>
+			<li class="sc"><%#= image_tag('soundcloud.png') %></li>
+		</ul>
+	</nav>END NAVIGATION
+	
+</header>END CONTAINER -->
+
+<div id="mobile-nav">
+	<div class="container">
+	
+			<!-- Mobile Navigation Button -->
+			<div class="navigationButton twelve columns clearfix">
+				<%= link_to image_tag('mobile-nav.png'), root_path %>
+			</div>
+			
+			<!-- Mobile Navigation -->
+			<div class="navigationContent twelve columns clearfix">
+				<ul>
+					<li><a href="#tweets">News</a></li>
+					<li><%= link_to 'Work', works_path %></li>
+					<li><%= link_to 'Contact', contacts_path %></li>
+				</ul>
+			</div><!-- END MOBILE NAVIGATION -->
+				
+	</div><!-- END CONTAINER -->
+</div>
+
+<header class="container">
+
+	<!-- Logo -->
+	<div id="logo" class="three columns">
+		<div class="headLogo"><%= link_to image_tag('logoNew8.png'), root_path %></div>
+	</div>
+	
+	<!-- Navigation -->
+	<nav id="nav" class="nine columns">
 		<ul id="navigation">
 			<li><a href="#tweets">News</a></li>
 			<li><%= link_to 'Work', works_path %></li>

@@ -1,7 +1,15 @@
 <div class="container">
-	<div class="twelve columns">
-		<% @work.each do |w| %>
-			<div class="video"><%= w.url_html %></div>
+
+	<!-- Thumbnails -->
+	<ul id="portfolio" class="clearfix">
+		<% @works.each do |w| %>
+		<li class="thumbnail four columns">
+			<a class="screen-roll" href="portfolio-single-project.html">
+				<span><%= w.title %></span>
+				<%= image_tag w.image.url(:medium) %>
+			</a>
+		</li>
 		<% end %>
-	</div>
-</div>
+	</ul>
+
+</div><!-- END CONTAINER -->
