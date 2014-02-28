@@ -7,6 +7,7 @@
 			<a class="screen-roll" href="portfolio-single-project.html">
 				<span><%= w.title %></span>
 				<%= image_tag w.image.url(:medium) %>
+				<%= w.client %> || <%= w.title %>
 			</a>
 		</li>
 		<% end %>
