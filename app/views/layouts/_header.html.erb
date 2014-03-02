@@ -37,7 +37,7 @@
 				<ul>
 					<li><a href="#tweets">News</a></li>
 					<li><%= link_to 'Work', works_path %></li>
-					<li><%= link_to 'Contact', contacts_path %></li>
+					<li><a href="mailto:nath@gmail.com?Subject=New%20contact%20from%20the%website" target="_top">Contact</a></li>
 				</ul>
 			</div><!-- END MOBILE NAVIGATION -->
 				
@@ -51,14 +51,20 @@
 		<div class="headLogo"><%= link_to image_tag('logoNew8.png'), root_path %></div>
 	</div>
 	
+	<% if user_signed_in? %>
+		<div class="userInfo">
+			<div>{ Logged in as <strong><%= current_user.email %></strong> } <%= link_to 'Edit', edit_user_registration_path %> | <%= link_to 'Logout', destroy_user_session_path, method: :delete %> | <%= link_to 'Manage Content', cms_path %></div>
+		</div>
+	<% end %>
+	
 	<!-- Navigation -->
 	<nav id="nav" class="nine columns">
 		<ul id="navigation">
 			<li><a href="#tweets">News</a></li>
 			<li><%= link_to 'Work', works_path %></li>
 			<li><%= link_to 'Contact', contacts_path %></li>
-			<li class="twitter"><%= image_tag('twitter.png') %></li>
-			<li class="sc"><%= image_tag('soundcloud.png') %></li>
+			<li class="twitter"><%= link_to image_tag('twitter.png'), "http://twitter.com" %></li>
+			<li class="sc"><%= link_to image_tag('soundcloud.png'), "http://soundcloud.com" %></li>
 		</ul>
 	</nav><!-- END NAVIGATION -->
 	

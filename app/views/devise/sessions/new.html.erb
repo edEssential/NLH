@@ -1,19 +1,25 @@
-<div class="formText formFade">
-	<p class="formHeader Gray">Sign in</p><br /><br />
-	<div class="form">	
+<section class="parallax-bg2 parallax colored clearfix marginUp padded2">
+	<div class="content dark padded container">
+		
+		<div class="title twelve columns">
+			<h2 class="bigger">Sign in</h2>
+			<span class="border"></span>
+		</div>
+
 		<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
-
-		  <%= f.label :email, class: 'formFieldT2'  %>
-		  <%= f.email_field :email, :autofocus => true, class: 'formFieldT2'  %><br /><br />
-
-		  <%= f.label :password, class: 'formFieldT2'  %>
-		  <%= f.password_field :password, class: 'formFieldT2'  %><br /><br />
-
-		  <% if devise_mapping.rememberable? -%>
-		    <%= f.check_box :remember_me %> <%= f.label :remember_me %><br /><br />
-		  <% end -%>
-
-		  <%= f.submit "Sign in", class: 'formFieldT2'  %>
+			<div class="formWrapper">	
+				<%= devise_error_messages! %>
+				<%= f.label :email, class: "formText" %><br/>
+    			<%= f.email_field :email, class: 'email text-area' %><br /><br />
+				<%= f.label :password, class: "formText" %><br/>
+    			<%= f.password_field :password, class: 'email text-area' %><br /><br />
+				<% if devise_mapping.rememberable? -%>
+			    	<div><%= f.check_box :remember_me %> <%= f.label :remember_me, class: "formText" %></div>
+				<% end -%>
+			</div>
+			<div class="title grid-full">
+				<%= f.submit "Sign in", class: "button" %><br/><br/>
+			</div>
 		<% end %>
 	</div>
-</div>
+</section>

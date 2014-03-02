@@ -10,6 +10,7 @@ body {height: 100%;width:100%;background-color:#f5f5f5;font-size:100.01%;}
 }
 .masonryImage {width:20%}
 .masonryImage img {max-width:100%;}
+.rulers {margin-top:-48px;}
 .left img, .right img {width:100%;}
 .title {text-align:left;font-family:"futura";font-style:italic;letter-spacing:0.05em;font-size:1.2em;font-weight:400;}
 .tenPixels {margin-bottom:16px;}
@@ -32,7 +33,6 @@ body {height: 100%;width:100%;background-color:#f5f5f5;font-size:100.01%;}
 .packshot img {max-width:100%;}
 .upTen {padding:4px 0px 24px 0px !important;font-size:11px;}
 .ten {margin-top:10px;}
-.mainContent {padding-top:80px;}
 .marginTop3 {margin-top:35px;}
 .marginTop {margin-top:20px;}
 .marginTopHalf {margin-top:16px;}
@@ -52,7 +52,7 @@ body {height: 100%;width:100%;background-color:#f5f5f5;font-size:100.01%;}
 .right {display:none;}
 .aboutFixer {margin-top:-170px;}
 .left {margin-top:-100px;}
-.rulers {margin:-38px 0px -62px 0px;}
+.rulers {margin:0px 0px -62px 0px;}
 }
 
 @media only screen and (max-width: 479px) {	
@@ -62,5 +62,6 @@ body {height: 100%;width:100%;background-color:#f5f5f5;font-size:100.01%;}
 .videosWrapper {margin-top:-60px;}
 .right {display:none;}
 .aboutFixer {margin-top:-170px;}
+.marginTop3 {margin:0px 0px 45px 0px;}
 .left {margin-top:-100px;}
 }

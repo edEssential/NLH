@@ -14,6 +14,8 @@
  *= require slider
  *= require elements
  *= require ui
+ *= require form
  *= require_self
  *= require headfoot
+ *= require cms2
  */

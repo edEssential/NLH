@@ -33,15 +33,6 @@
 .formFieldT2 {margin:2% 0% 2% 0% !important;}
 .formFieldT3 {margin:2% 0% 2% 20% !important;}
 i {font-size:13px;}
-.userInfo {
-	position:absolute;
-	width:365px;
-	float:left;
-	font-size:12px;
-	color:#FF0000;
-	margin:66px 70px 0px 20px;
-}
-.userInfo strong {color:#858585;}
 .edit {
 	position:absolute;
 	margin:108px 0px 0px -580px;

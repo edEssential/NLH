@@ -5,10 +5,7 @@
 				<span class="icon"><%= image_tag('tweetsIcon.png') %></span>
 				<h3 class="title">About me</h3>
 				<p class="description"></p><br />
-				<div class="info"><%= simple_format(@homepost.info) %></div>
-				<% if user_signed_in? %>
-					<%= link_to image_tag('edit2.png'), edit_homepost_path(1), :class => "editHome" %>
-				<% end %>
+				<div class="info"><%= simple_format(@homepost.info) %></div>	
 			</div>	
 		</li>
 		<li class="six columns tweets">
