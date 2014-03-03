@@ -1,19 +1,27 @@
-<div class="formText formFade">
-	<p class="formHeader Gray">Sign up</p><br /><br />
-	<div class="form">	
-		<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
-		  <%= devise_error_messages! %>
+<section class="parallax-bg2 parallax colored clearfix marginUp" id="form-home" data-type="background" data-speed="10">
+	<div class="content dark padded container">
+		
+		<div class="title grid-full">
+			<h2 class="formTitle">Sign up</h2>
+		</div>
 
-		  <%= f.label :email, class: 'formFieldT2'  %><br />
-		  <%= f.email_field :email, :autofocus => true, class: 'formFieldT2'  %><br /><br />
-
-		  <%= f.label :password, class: 'formFieldT2'  %><br />
-		  <%= f.password_field :password, class: 'formFieldT2'  %><br /><br />
-
-		  <%= f.label :password_confirmation, class: 'formFieldT2'  %><br />
-		  <%= f.password_field :password_confirmation, class: 'formFieldT2'  %><br /><br />
-
-		  <%= f.submit "Sign up", class: 'formFieldT2'  %>
-		<% end %>
+		<div class="cmsWrapper3">
+				<div class="formWrapper">
+					<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+					<%= devise_error_messages! %>
+						<%= f.label :email, class: 'formText' %><br/>
+			    		<%= f.email_field :email, class: 'email text_areaArea'  %><br /><br />
+						<%= f.label :password, class: 'formText' %><br/>
+			    		<%= f.password_field :password, class: 'email text_areaArea'  %><br /><br />
+						<%= f.label :password_confirmation, class: 'formText' %><br/>
+			    		<%= f.password_field :password_confirmation, class: 'email text_areaArea'  %><br /><br />
+			    		<%= f.submit "Sign up" %>
+					<% end %>
+				</div>
+			</div>
+		</div>
 	</div>
-</div>
+</section>
+
+
+

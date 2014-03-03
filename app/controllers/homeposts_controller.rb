@@ -1,4 +1,5 @@
 class HomepostsController < ApplicationController
+  before_filter :authenticate_user!, :except => [:index, :create] 
   
    def new
      @homepost = Homepost.new
@@ -7,13 +8,13 @@ class HomepostsController < ApplicationController
    def create
      @homepost = Homepost.create(params[:homepost])
      respond_to do |format|
-       format.html { redirect_to root_path }
+       format.html { redirect_to cms_path }
      end
    end
 
    def show
      respond_to do |format|
-       format.html { redirect_to root_path }
+       format.html { redirect_to cms_path }
      end
    end
 
@@ -35,7 +36,7 @@ class HomepostsController < ApplicationController
      @homepost = Homepost.find(params[:id])
      @homepost.destroy
      respond_to do |format|
-       format.html { redirect_to root_path }
+       format.html { redirect_to cms_path }
      end
    end
   

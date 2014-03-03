@@ -6,7 +6,8 @@ class ApplicationController < ActionController::Base
     @contact = Contact.new
     @contacts = Contact.all
     @admin = Contact.first
-    @hompepost = Homepost.first
+    @homeposts = Homepost.all
+    @homepost = Homepost.first
   end
   
 end

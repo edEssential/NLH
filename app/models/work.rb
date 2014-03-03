@@ -1,15 +1,15 @@
 class Work < ActiveRecord::Base
-  attr_accessible :about, :client, :title, :category_id, :url, :homepageinfo, :posthome
+  attr_accessible :about, :client, :title, :category_id, :url, :homepageinfo, :posthome, :image
   belongs_to :category
   
-  validates :image, :dimensions => { :width => 220, :height => 133 }
+  validates :image, :dimensions => { :width => 738, :height => 448 }
   
-  before_save :create_sizes
+  #before_save :create_sizes
   
   has_attached_file :image, styles: {
       thumb: '100x100>',
       square: '200x200#',
-      medium: '220X133>'
+      medium: '738X448>'
     }
   
   auto_html_for :url do

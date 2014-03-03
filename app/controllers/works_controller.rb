@@ -9,7 +9,7 @@ class WorksController < ApplicationController
   def create
     @work = Work.create(params[:work])
     respond_to do |format|
-      format.html { redirect_to works_path }
+      format.html { redirect_to cms_path }
     end
   end
   
@@ -21,7 +21,7 @@ class WorksController < ApplicationController
     @work = Work.find(params[:id])
     if @work.update_attributes(params[:work])
       respond_to do |format|
-       format.html { redirect_to works_path }
+       format.html { redirect_to cms_path }
       end
     else
       render :action => 'edit'
@@ -32,7 +32,7 @@ class WorksController < ApplicationController
     @work = Work.find(params[:id])
     @work.destroy
     respond_to do |format|
-      format.html { redirect_to works_path }
+      format.html { redirect_to cms_path }
     end
   end
   

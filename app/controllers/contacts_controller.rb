@@ -32,7 +32,9 @@ class ContactsController < ApplicationController
   def update   
     @contact = Contact.find(params[:id])
     if @contact.update_attributes(params[:contact])
-      redirect_to :action => 'index'
+      respond_to do |format|
+       format.html { redirect_to cms_path }
+      end
     else
       render :action => 'edit'
     end

@@ -1,12 +1,24 @@
 <div class="container">
 
+	<!-- Thumbnails
+	<ul id="portfolio" class="clearfix">
+		<%# @works.each do |w| %>
+		<li class="thumbnail four columns">
+			<a class="screen-roll">
+				<span><%#= w.client %> || <%#= w.title %></span>
+				<%#= image_tag w.image.url(:medium) %>
+			</a>
+		</li>
+		<%# end %>
+	</ul>-->
+	
 	<!-- Thumbnails -->
 	<ul id="portfolio" class="clearfix">
 		<% @works.each do |w| %>
 		<li class="thumbnail four columns">
-			<a class="screen-roll">
+			<a class="screen-roll" href="./works/<%= w.id %>">
 				<span><%= w.client %> || <%= w.title %></span>
-				<%= image_tag w.image.url(:medium) %>
+				<%= image_tag(w.image.url(:medium), class: "projectImage") %>
 			</a>
 		</li>
 		<% end %>
