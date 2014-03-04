@@ -2,7 +2,7 @@
 	
 	<ul id="overview" class="container twelve columns videosWrapper">
 		<% @work.each do |w| %>
-			<li class="six columns">
+			<li class="six columns videoPadder">
 				<div class="block2 clearfix">
 					<h3 class="post-title white"><%= w.title %></h3>
 					<div class="video marginTop"><%= w.url_html %></div>
