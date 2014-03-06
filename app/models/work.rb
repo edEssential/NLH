@@ -2,7 +2,8 @@ class Work < ActiveRecord::Base
   attr_accessible :about, :client, :title, :category_id, :url, :homepageinfo, :posthome, :image
   belongs_to :category
   
-  validates :image, :dimensions => { :width => 738, :height => 448 }
+  #validates :image, :dimensions => { :width => 738, :height => 448 }, :if => :image_present?
+
   
   #before_save :create_sizes
   

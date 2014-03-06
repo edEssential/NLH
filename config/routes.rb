@@ -1,6 +1,6 @@
 V1::Application.routes.draw do
 
-  devise_for :users, path: "auth", path_names: { sign_in: 'login', sign_out: 'logout', sign_up: 'create_new_admin' }
+  devise_for :users, path: "auth", path_names: { sign_in: 'login', sign_out: 'logout', sign_up: 'create_new_freshrolls' }
 
   root :to => 'home#index'
   match "works/new" => "works#new" 

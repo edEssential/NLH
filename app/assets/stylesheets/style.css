@@ -293,7 +293,7 @@ Author URI: http://www.aetherdesign.net
 
 	#portfolio, #portfolio-standard { margin-bottom:0px; margin-top:35px; border-bottom:1px dotted #D3D3D3;padding-bottom:60px; }
 
-	.thumbnail { padding-top: 30px; text-align: center; font-family:"brandon grotesque"; text-transform:uppercase; font-size:14px; color:#000000; }
+	.thumbnail { height:100%;padding-top: 30px; text-align: center; font-family:"brandon grotesque"; text-transform:uppercase; font-size:14px; color:#000000; }
 	.thumbnail img { width: 100%; }
 
 	#project { padding-bottom: 80px; }
