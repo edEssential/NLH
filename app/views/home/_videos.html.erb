@@ -5,7 +5,7 @@
 			<li class="six columns videoPadder">
 				<div class="block2 clearfix">
 					<h3 class="post-title white"><%= w.title %></h3>
-					<div class="video marginTop"><%= w.url_html %></div>
+					<div class="video marginTop homeVid"><%= w.url_html %></div>
 					<div class="text2 marginTopHalf white"><%= simple_format(truncate (w.homepageinfo), length: 150, :separator => ' ') rescue nil %></div>
 					<div class="marginTopQuater"><%= link_to 'SEE MORE', work_path(w), :class => 'reversed text2' %></div>
 				</div>	
