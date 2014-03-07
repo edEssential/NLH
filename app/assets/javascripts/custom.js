@@ -3,7 +3,7 @@ $(window).load(function () {
 
 	$('.navigationContent').hide();
 
-	$('#navigation li').hover(
+	$('#navigation li').click(
 	       function () {
 	           //show its submenu
 	           jQuery('ul', this).stop().slideDown(400);
