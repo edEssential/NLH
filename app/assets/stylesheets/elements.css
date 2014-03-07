@@ -581,5 +581,7 @@ Author URI: http://www.aetherdesign.net
         /* Filters */
         #filter li { margin-top: 20px; }
 
+		.thirdfourth, #tab-3, #tab-4 {display:none;}
+
         
     }    
