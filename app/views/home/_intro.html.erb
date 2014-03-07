@@ -26,13 +26,13 @@
 					<ul>
 						<li><a href="#tab-1"><%= @homepost.title1 rescue nil %></span></a></li>
 						<li><a href="#tab-2"><%= @homepost.title2 rescue nil %></span></a></li>
-						<li class="thirdfourth"><a href="#tab-3"><%= @homepost.title1 rescue nil %></span></a></li>
-						<li class="thirdfourth"><a href="#tab-4"><%= @homepost.title2 rescue nil %></span></a></li>
+						<li class="thirdfourth"><a href="#tab-3"><%= @homepost.title3 rescue nil %></span></a></li>
+						<li class="thirdfourth"><a href="#tab-4"><%= @homepost.title4 rescue nil %></span></a></li>
 					</ul>
 					<div id="tab-1" class="fixer"><%= @homepost.url1.html_safe rescue nil %></div>
 					<div id="tab-2" class="fixer"><%= @homepost.url2.html_safe rescue nil %></div>
-					<div id="tab-3" class="fixer"><%= @homepost.url1.html_safe rescue nil %></div>
-					<div id="tab-4" class="fixer"><%= @homepost.url2.html_safe rescue nil %></div>
+					<div id="tab-3" class="fixer"><%= @homepost.url3.html_safe rescue nil %></div>
+					<div id="tab-4" class="fixer"><%= @homepost.url4.html_safe rescue nil %></div>
 				</div>
 			</div>	
 		</li>
