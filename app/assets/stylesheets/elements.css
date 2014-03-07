@@ -55,13 +55,13 @@ Author URI: http://www.aetherdesign.net
 ================================================== */
 
     h1 {
-        font-weight: 300;
+        font-weight: 800;
         font-size: 45px;
         color: #ef1c00;
     }
 
 	h1.title {
-		font-weight: 300;
+		font-weight: 400;
         font-size: 35px;
 		color:#000000;
 	}
@@ -98,10 +98,10 @@ Author URI: http://www.aetherdesign.net
     }
 
     h3.post-title { 
-        color: #000000;
+        color: #ffffff;
         border-bottom: 1px solid #e4f1fe;
         padding-bottom: 20px;
-		font-family:"futura";font-style:italic;letter-spacing:0.05em;font-size:1.2em;font-weight:400;
+		font-family:"futura-pt";font-style:italic;letter-spacing:0.05em;font-size:1.2em;font-weight:800;
     }
 
     h3.light { font-weight: 300; color: #fff; }
@@ -132,7 +132,7 @@ Author URI: http://www.aetherdesign.net
     
     a.button {
         display: inline-block;
-        font-family: 'futura', helvetica, arial, sans-serif;
+        font-family: 'futura-pt', helvetica, arial, sans-serif;
         font-size: 14px;
         text-transform: uppercase;
         color: #fff;
@@ -516,7 +516,7 @@ Author URI: http://www.aetherdesign.net
         text-decoration: none;
         -webkit-appearance: none;
          display: inline-block;
-        font-family: 'Lato', helvetica, arial, sans-serif;
+        font-family:helvetica, arial, sans-serif;
         font-size: 12px;
         text-transform: uppercase;
         color: #fff;
