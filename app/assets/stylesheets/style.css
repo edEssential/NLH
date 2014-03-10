@@ -85,6 +85,7 @@ Author URI: http://www.aetherdesign.net
 		text-align:center;
 		text-transform:capitalize;
 		line-height:14px; 
+		font: normal 15px "brandon grotesque", helvetica, arial, sans-serif; color:#000000;
 	}
 	
 	#navigation .dropdown li a:hover {
@@ -166,7 +167,11 @@ Author URI: http://www.aetherdesign.net
 	}
 	
 	#overview .height {
-		height:560px;
+		height:460px;
+	}
+	
+	#overview .height5 {
+		height:460px;
 	}
 
 	#overview .height2 {
@@ -506,6 +511,18 @@ Author URI: http://www.aetherdesign.net
 /* #Media Queries
 ================================================== */
 
+	@media (max-width: 1067px) {
+		#overview .height5 {
+			height:480px;
+		}
+	}
+	
+	@media (max-width: 1025px) {
+		#overview .height5 {
+			height:560px;
+		}
+	}
+
 	@media handheld, only screen and (max-width: 768px), only screen and (max-device-width: 768px) and (orientation:portrait) {
 
 		/* Header */
@@ -557,10 +574,22 @@ Author URI: http://www.aetherdesign.net
 		#social-icons li:last-of-type { padding-right: 0px; }
 		/* Switcher */
 		#style-switch { display: none; }
+		#overview .height5 {
+			height:420px;
+		}
+	}
+	
+	@media (max-width: 618px) {
+		#overview .height5 {
+			height:510px;
+		}
 	}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */ 
 	@media only screen and (max-width: 479px) {	
 	
 		#portfolio .thumbnail img { width: 100%; }
+		#overview .height5 {
+			height:560px;
+		}
 	}

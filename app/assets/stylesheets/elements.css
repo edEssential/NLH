@@ -32,7 +32,7 @@ Author URI: http://www.aetherdesign.net
 /* #Common Styles
 ================================================== */
 
-    body { font-family: helvetica, arial, sans-serif; color: #747474; font-weight: 400; line-height: 170%; font-size: 12px; }
+    body { font: normal 15px "brandon grotesque", helvetica, arial, sans-serif; color: #747474; font-weight: 400; line-height: 170%; font-size: 12px; }
 
     /* Links */
     a, a:visited { color: #434343; text-decoration: none; }
