@@ -84,8 +84,7 @@ Author URI: http://www.aetherdesign.net
 		padding:0px 15px 0px 15px;
 		text-align:center;
 		text-transform:capitalize;
-		line-height:14px; 
-		font: normal 15px "brandon grotesque", helvetica, arial, sans-serif; color:#000000;
+		line-height:14px;
 	}
 	
 	#navigation .dropdown li a:hover {
