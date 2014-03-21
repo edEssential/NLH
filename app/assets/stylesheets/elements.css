@@ -237,7 +237,7 @@ Author URI: http://www.aetherdesign.net
 /* #Tabs
 ================================================== */
 
-    #tabs {font-size:12px;}
+    #tabs {font-size:14px;}
 	
 	#tabs li, #tabs p { float: left; }
     
@@ -583,6 +583,13 @@ Author URI: http://www.aetherdesign.net
         #filter li { margin-top: 20px; }
 
 		.thirdfourth, #tab-3, #tab-4 {display:none;}
+		
+		#tabs {font-size:10px;}
+		#tabs ul li, #tabs p {padding:0px;margin-bottom:26px;}
+		
+		#tab-1, #tab-2 {margin-top:0px;}
+		
+		
 
         
     }    
