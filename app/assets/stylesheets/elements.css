@@ -101,7 +101,7 @@ Author URI: http://www.aetherdesign.net
         color: #ffffff;
         border-bottom: 1px solid #e4f1fe;
         padding-bottom: 20px;
-		font-family:"futura-pt";font-style:italic;letter-spacing:0.05em;font-size:1.2em;font-weight:800;
+		font-family:'Open Sans', sans-serif;font-style:italic;letter-spacing:0.05em;font-size:1.2em;font-weight:800;
     }
 
     h3.light { font-weight: 300; color: #fff; }
@@ -132,7 +132,7 @@ Author URI: http://www.aetherdesign.net
     
     a.button {
         display: inline-block;
-        font-family: 'futura-pt', helvetica, arial, sans-serif;
+        font-family:'Open Sans', helvetica, arial, sans-serif;
         font-size: 14px;
         text-transform: uppercase;
         color: #fff;
@@ -276,7 +276,7 @@ Author URI: http://www.aetherdesign.net
 
 	#tab-1, #tab-2 {
 		width:100%;
-		font-family:"brandon-grotesque";
+		font-family:'Dosis', sans-serif;
 	}
 
 

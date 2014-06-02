@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
-body {height: 100%;width:100%;background-color:#f5f5f5;font-size:100.01%;font-family:"futura", "helvetica", sans-serif, "brandon-grotesque";}
+body {height: 100%;width:100%;background-color:#f5f5f5;font-size:100.01%;font-family:'Open Sans', sans-serif;}
 .height {max-height:476px;}
 .rulers {margin:-68px 0px -62px 0px;}
 .left {border-bottom:9px solid #202326;}
@@ -12,19 +12,19 @@ body {height: 100%;width:100%;background-color:#f5f5f5;font-size:100.01%;font-fa
 .masonryImage img {max-width:100%;}
 .rulers {margin-top:-48px;}
 .left img, .right img {width:100%;}
-.title {text-align:left;font-family:"futura-pt";font-style:italic;letter-spacing:0.05em;font-size:1.2em;font-weight:800;}
+.title {text-align:left;font-family:'Open Sans', sans-serif;font-style:italic;letter-spacing:0.05em;font-size:1.2em;font-weight:800;}
 .tenPixels {margin-bottom:16px;}
 .textGray {color:#5a5a59;}
 .linkGray, .linkGray a {color:#595959;font-family:helvetica;text-decoration:none;}
 .labelsLink, .labelsLink a {color:#595959;text-decoration:none;}
 .linkOrange, .linkOrange a {color:#ee6457;font-weight:800;text-decoration:none;}
 .linkPink, .linkPink a {color:#fcb6a7;font-weight:800;text-decoration:none;}
-.introText {font-family:"brandon-grotesque";margin:37px 0px 0px 0px;color:#5a5a59;font-weight:100;font-size:30px;line-height:38px;}
+.introText {font-family:'Dosis', sans-serif;margin:37px 0px 0px 0px;color:#5a5a59;font-weight:200;font-size:30px;line-height:38px;}
 .smallItalic {font-size:16px;font-style:italic;font-weight:800;}
 .releaseTitle {font-size:14px;}
-.releaseReview {font-family:"brandon-grotesque";margin:37px 0px 0px 0px;color:#5a5a59;font-weight:100;font-size:22px;line-height:26px;}
+.releaseReview {font-family:'Dosis', sans-serif;margin:37px 0px 0px 0px;color:#5a5a59;font-weight:200;font-size:22px;line-height:26px;}
 .releaseDescription {font-size:13px;line-height:22px;letter-spacing:1px;}
-.releaseInfo {font-family:"brandon-grotesque";font-size:18px;line-height:20px;font-weight:300;color:#000000;margin:-10px 0px 0px 0px;}
+.releaseInfo {font-family:'Dosis', sans-serif;font-size:18px;line-height:20px;font-weight:300;color:#000000;margin:-10px 0px 0px 0px;}
 .releaseBuy {margin:20px 0px -10px 0px;}
 .homePhoto {margin-top:25px;}
 .homePhotoSmall {margin-left:10px;}
@@ -42,10 +42,10 @@ body {height: 100%;width:100%;background-color:#f5f5f5;font-size:100.01%;font-fa
 .white {color:#f8f8f8;}
 .marginDown {margin-top:75px;}
 .info p {margin:26px 0px;}
-.info {font-family:"brandon-grotesque", "futura";font-size:22px;line-height:24px;}
+.info {font-family:'Dosis', sans-serif;font-size:22px;line-height:24px;}
 .video {margin-top:63px;}
 .homeVid {margin-top:23px;}
-.videoInfo {font-family:"brandon-grotesque", "futura";font-size:24px;margin:35px 0px 20px 0px;color:#000000;}
+.videoInfo {font-family:'Dosis', sans-serif;font-size:24px;margin:35px 0px 20px 0px;color:#000000;}
 .videoDescription {font-size:14px;line-height:20px;margin-bottom:0px;border-bottom:1px dotted #D3D3D3;padding:0px 0px 20px 0px;color:#949494;}
 .videoPadder {margin-bottom:30px;}
 
