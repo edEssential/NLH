@@ -55,8 +55,8 @@ Author URI: http://www.aetherdesign.net
 	#navigation li img {margin:-5px -25px 0px 0px;}
 
 	#navigation li:last-of-type { margin-right: 0px; }
-	#navigation li > a { color: #ababab; }		
-	#navigation li.active > a, #navigation li:hover > a { color: #434343; cursor: pointer; }
+	#navigation li > a { color: #000000; }		
+	#navigation li.active > a, #navigation li:hover > a { color: #000000; cursor: pointer; }
 
 	/* Dropdown */
 	#navigation .dropdown {
@@ -150,7 +150,7 @@ Author URI: http://www.aetherdesign.net
 	#overview .block {
 		display: block;
 		background: #fff;
-		border-bottom: 7px solid #8795a3;
+		border-bottom: 7px solid #000000;
 		-moz-border-radius: 5px;
 		border-radius: 5px;
 		padding: 20px 20px 40px 20px;
@@ -159,7 +159,7 @@ Author URI: http://www.aetherdesign.net
 	#overview .block2 {
 		display: block;
 		background:rgba(255,255,255,0.3);
-		border-bottom: 7px solid rgba(32,35,38,0.9);
+		border-bottom: 7px solid rgba(0,0,0,1);
 		-moz-border-radius: 5px;
 		border-radius: 5px;
 		padding: 20px 20px 40px 20px;
