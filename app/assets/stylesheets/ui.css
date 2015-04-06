@@ -46,8 +46,9 @@ body {height: 100%;width:100%;background-color:#f5f5f5;font-size:100.01%;font-fa
 .video {margin-top:63px;}
 .homeVid {margin-top:23px;}
 .videoInfo {font-family:'Dosis', sans-serif;font-size:24px;margin:35px 0px 20px 0px;color:#000000;}
-.videoDescription {font-size:14px;line-height:20px;margin-bottom:0px;border-bottom:1px dotted #D3D3D3;padding:0px 0px 20px 0px;color:#949494;}
+.videoDescription {font-size:14px;line-height:20px;margin-bottom:50px;border-bottom:1px dotted #D3D3D3;padding:0px 0px 20px 0px;color:#949494;}
 .videoPadder {margin-bottom:30px;}
+.portfolio {margin-bottom:50px;}
 
 @media only screen and (max-width: 768px) {
 		
