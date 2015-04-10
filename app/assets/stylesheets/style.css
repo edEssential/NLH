@@ -525,7 +525,7 @@ Author URI: http://www.aetherdesign.net
 	@media handheld, only screen and (max-width: 768px), only screen and (max-device-width: 768px) and (orientation:portrait) {
 
 		/* Header */
-		#mobile-nav { display: block; }
+		#mobile-nav { display: none; }
 		#navigation { display: none; }
 		#logo img {float: none;}
 		#logo { text-align: center;}
@@ -591,6 +591,6 @@ Author URI: http://www.aetherdesign.net
 	
 		#portfolio .thumbnail img { width: 100%; }
 		#overview .height5 {
-			height:680px;
+			height:500px;
 		}
 	}

@@ -2,7 +2,10 @@
 	<ul id="overview" class="container aboutFixer">
 		<li class="six columns">
 			<div class="block clearfix height5">
-				<div class="info"><%= simple_format(@homepost.info) %></div>	
+				<div class="info"><%#= simple_format(@homepost.info) %>
+					Hi, I’m Nathan.<br/><br/>
+					I work in music as a <%= link_to "Product Manager", "https://www.kobaltmusic.com/page-services-label-services.php#kobalt-portal", target: "_blank" %>.<br/><br/> I also write and produce <%= link_to "music", "http://www.eskimotwins.com/", target: "_blank" %> sometimes for <%= link_to "visual media", works_path %>.
+				</div>	
 			</div>	
 		</li>
 		<li class="six columns tweets">
@@ -19,15 +22,15 @@
 				<p class="description"></p>
 				<div id="tabs">
 					<ul>
-						<li><a href="#tab-1"><%= @homepost.title1 rescue nil %></span></a></li>
-						<li><a href="#tab-2"><%= @homepost.title2 rescue nil %></span></a></li>
-						<li class="thirdfourth"><a href="#tab-3"><%= @homepost.title3 rescue nil %></span></a></li>
-						<li class="thirdfourth"><a href="#tab-4"><%= @homepost.title4 rescue nil %></span></a></li>
+						<li><a href="#tab-1"><%#= @homepost.title1 rescue nil %></span></a></li>
+						<li><a href="#tab-2"><%#= @homepost.title2 rescue nil %></span></a></li>
+						<li class="thirdfourth"><a href="#tab-3"><%#= @homepost.title3 rescue nil %></span></a></li>
+						<li class="thirdfourth"><a href="#tab-4"><%#= @homepost.title4 rescue nil %></span></a></li>
 					</ul>
-					<div id="tab-1" class="fixer"><%= @homepost.url1.html_safe rescue nil %></div>
-					<div id="tab-2" class="fixer"><%= @homepost.url2.html_safe rescue nil %></div>
-					<div id="tab-3" class="fixer"><%= @homepost.url3.html_safe rescue nil %></div>
-					<div id="tab-4" class="fixer"><%= @homepost.url4.html_safe rescue nil %></div>
+					<div id="tab-1" class="fixer"><%#= @homepost.url1.html_safe rescue nil %></div>
+					<div id="tab-2" class="fixer"><%#= @homepost.url2.html_safe rescue nil %></div>
+					<div id="tab-3" class="fixer"><%#= @homepost.url3.html_safe rescue nil %></div>
+					<div id="tab-4" class="fixer"><%#= @homepost.url4.html_safe rescue nil %></div>
 				</div>
 			</div>	
 		</li>-->
