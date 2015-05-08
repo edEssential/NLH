@@ -18,10 +18,16 @@
 	</head>
 	<body>
 		
-		<%= render 'layouts/header' %>
-		<div class="rulers"><%= render 'layouts/rulers' %></div>
+		<!-- Logo -->
+		<div id="logo2" class="twelve columns">
+			<div class="headLogo"><%= link_to image_tag('logoNew8.png'), root_path %></div>
+		</div>
+		<p class="new">Site coming soon!</p>
 		
-		<%= yield %>
+		<%#= render 'layouts/header' %>
+		<!--<div class="rulers"><%#= render 'layouts/rulers' %></div>-->
+		
+		<%#= yield %>
 			
 		<%#= render 'layouts/footer' %>
 
